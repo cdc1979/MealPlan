@@ -28,7 +28,7 @@
     .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
     .meta span{padding:7px 12px;border:1px solid rgba(255,255,255,.24);border-radius:999px;background:rgba(255,255,255,.09);backdrop-filter:blur(7px);font-size:.86rem}
     .tabs-wrap{position:sticky;top:0;z-index:20;padding:14px 0 4px;background:linear-gradient(var(--paper) 78%,transparent)}
-    .tabs{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:6px;border:1px solid var(--line);border-radius:17px;background:rgba(255,255,255,.92);box-shadow:0 10px 32px rgba(31,63,51,.08);backdrop-filter:blur(16px)}
+    .tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:6px;border:1px solid var(--line);border-radius:17px;background:rgba(255,255,255,.92);box-shadow:0 10px 32px rgba(31,63,51,.08);backdrop-filter:blur(16px)}
     .tab{border:0;border-radius:12px;background:transparent;padding:12px 18px;font-weight:800;cursor:pointer;transition:.2s ease}
     .tab:hover{background:var(--cream)}
     .tab[aria-selected="true"]{background:var(--green);color:white;box-shadow:0 8px 20px rgba(22,60,49,.2)}
@@ -107,7 +107,8 @@
   <div class="tabs-wrap">
     <nav class="tabs shell" role="tablist" aria-label="Meal plan sections">
       <button class="tab" id="week-tab" role="tab" aria-selected="true" aria-controls="week-panel" tabindex="0">Week plan</button>
-      <button class="tab" id="shopping-tab" role="tab" aria-selected="false" aria-controls="shopping-panel" tabindex="-1">Shopping list <span id="shopping-count"></span></button>
+        <button class="tab" id="shopping-tab" role="tab" aria-selected="false" aria-controls="shopping-panel" tabindex="-1">Shopping list <span id="shopping-count"></span></button>
+        <button class="tab" id="bulk-buy-tab" role="tab" aria-selected="false" aria-controls="bulk-buy-panel" tabindex="-1">Bulk-buy guide</button>
     </nav>
   </div>
 
@@ -130,12 +131,15 @@
       </div>
       <div class="category-nav" id="category-nav" aria-label="Filter shopping categories"></div>
       <div class="shopping-groups" id="shopping-groups"></div>
+      <p class="empty" id="empty-state">No items in this category.</p>
+    </section>
+
+    <section id="bulk-buy-panel" role="tabpanel" aria-labelledby="bulk-buy-tab" hidden>
+      <div class="section-head"><div><h2>Bulk-buy guide</h2><p>Use these notes to stock up where it saves money or waste—and avoid buying too much where freshness matters.</p></div></div>
       <section class="bulk-buy" aria-labelledby="bulk-buy-title">
         <h3 id="bulk-buy-title">Bulk-buy recommendations</h3>
-        <p>Use these notes to stock up where it saves money or waste—and avoid buying too much where freshness matters.</p>
         <div class="bulk-grid" id="bulk-buy-list"></div>
       </section>
-      <p class="empty" id="empty-state">No items in this category.</p>
     </section>
   </main>
   <footer class="shell">Built around the plan for four, with surplus intentionally carried into lunches.</footer>
@@ -154,13 +158,13 @@
             localStorage.removeItem('greenvale-local-plan');
             throw new Error('Saved plan needs updating');
           }
-          renderDays(); renderCategories(); renderShopping();
+          renderDays(); renderCategories(); renderShopping(); renderBulkBuy();
           return;
         }
         const response=await fetch('mealplan.json');
         if(!response.ok)throw new Error('Could not load meal plan');
         state.data=await response.json();
-        renderDays(); renderCategories(); renderShopping();
+        renderDays(); renderCategories(); renderShopping(); renderBulkBuy();
       }catch(error){
         showLocalFilePicker();
       }
@@ -216,10 +220,13 @@
         const key=`${item.category}|${item.item}`; const checked=state.checked.has(key);
         return `<li class="shop-item"><input class="shop-check" type="checkbox" ${checked?'checked':''} data-key="${escapeHtml(key)}" aria-label="Mark ${escapeHtml(item.item)} as bought"><div><strong>${escapeHtml(item.item)}</strong><span class="quantity">${escapeHtml(item.quantity)}</span><p class="shop-note">${escapeHtml(item.notes)}</p><div class="used-for">${item.used_for.map(use=>`<span>${escapeHtml(use)}</span>`).join('')}</div></div></li>`;
       }).join('')}</ul></section>`).join('');
-      document.getElementById('bulk-buy-list').innerHTML=items.filter(item=>item.bulkrecommend).map(item=>`<article class="bulk-card"><strong>${escapeHtml(item.item)}</strong><p>${escapeHtml(item.bulkrecommend)}</p></article>`).join('');
       document.getElementById('empty-state').style.display=items.length?'none':'block';
       document.querySelectorAll('.shop-check').forEach(box=>box.addEventListener('change',()=>{box.checked?state.checked.add(box.dataset.key):state.checked.delete(box.dataset.key);saveChecked();updateProgress()}));
       updateProgress();
+    }
+
+    function renderBulkBuy(){
+      document.getElementById('bulk-buy-list').innerHTML=state.data.shopping_list.filter(item=>item.bulkrecommend).map(item=>`<article class="bulk-card"><strong>${escapeHtml(item.item)}</strong><p>${escapeHtml(item.bulkrecommend)}</p></article>`).join('');
     }
 
     function saveChecked(){localStorage.setItem('greenvale-shopping',JSON.stringify([...state.checked]))}
