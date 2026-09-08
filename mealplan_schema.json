@@ -12,6 +12,7 @@
     "assumptions",
     "days",
     "weekly_preparations",
+    "pantry_inventory",
     "shopping_list",
     "estimated_total_cost",
     "waste_reduction_summary"
@@ -33,6 +34,11 @@
       "type": "array",
       "description": "One-off batch preparations made ahead for the week, such as banana bread, sauces, or dressings, that get used across multiple meals.",
       "items": { "$ref": "#/$defs/preparation" }
+    },
+    "pantry_inventory": {
+      "type": "array",
+      "description": "Items already on hand before this week's shopping, so the plan and shopping list can account for what doesn't need to be bought.",
+      "items": { "$ref": "#/$defs/pantryItem" }
     },
     "shopping_list": {
       "type": "array",
@@ -101,6 +107,20 @@
           "items": { "type": "string", "minLength": 1 }
         },
         "notes": { "type": "string" }
+      }
+    },
+    "pantryItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["item", "quantity", "use_by_date"],
+      "properties": {
+        "item": { "type": "string", "minLength": 1 },
+        "quantity": { "type": "string", "minLength": 1 },
+        "use_by_date": {
+          "type": "string",
+          "format": "date",
+          "description": "Date by which this item should be used, e.g. a best-before or expiry date."
+        }
       }
     },
     "shoppingItem": {

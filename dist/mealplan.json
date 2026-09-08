@@ -1,1151 +1,149 @@
 {
-  "plan_name": "Meal/Shopping Plan - Waste-Smart Week",
+  "plan_name": "Low-Waste Family Meal Plan — 14 September 2026",
   "week_start": "2026-09-14",
   "people": 4,
   "assumptions": [
-    "The plan feeds four people to safely cover the stated requirement of three to four people.",
-    "Common cupboard basics such as cooking oil, salt, pepper, stock cubes, dried herbs and mayonnaise are included only where a top-up may be needed.",
-    "Pack sizes are practical UK supermarket sizes and may be adjusted to the nearest available equivalent.",
-    "Lunch portions can be reduced for young children; unused cooked food should be chilled promptly and used within two days or frozen.",
-    "The week begins on the next Monday after the spreadsheet was reviewed.",
-    "Prices are GBP estimates based primarily on the source cost estimates where provided; branded choices and local availability will change the checkout total."
+    "The plan is for four people so it safely covers the stated requirement of feeding three or four.",
+    "The week starts on the next Monday after the workbook was reviewed: 14 September 2026.",
+    "Prices are GBP estimates based on workbook values where supplied and ordinary UK pack prices otherwise; actual shop prices may vary.",
+    "Pantry apples are scheduled immediately because the Pantry tab says to use them within two days of 8 September 2026.",
+    "The unopened pantry tin of beans had no use-by information, so 8 September 2027 is recorded as a conservative planning date; check the printed date on the tin.",
+    "Salt, pepper, cooking oil and common dried herbs/spices are assumed available; fajita seasoning is listed because it is specifically called out in the workbook.",
+    "Breakfasts and lunches use the workbook choices, with dinner leftovers deliberately used for lunches to reduce cooking and waste.",
+    "Sunday weekly preparation is intended to happen before or alongside the start of the week; prepared items are stored or frozen as noted."
   ],
   "days": [
     {
       "date": "2026-09-14",
       "day": "Monday",
-      "breakfast": {
-        "meal": "Ready Brek with soy milk, banana and blueberries",
-        "servings": 4,
-        "notes": "Uses the most delicate berries first. Slice only the bananas needed so the rest keep longer.",
-        "prep_time_minutes": 5,
-        "cook_time_minutes": 3,
-        "difficulty": "easy"
-      },
-      "lunch": {
-        "meal": "Ham sandwiches with grapes",
-        "servings": 4,
-        "notes": "Open the ham and grapes early in the week. Freeze half the bread on shopping day and defrost later slices as needed.",
-        "prep_time_minutes": 10,
-        "cook_time_minutes": 0,
-        "difficulty": "easy"
-      },
-      "dinner": {
-        "meal": "Salmon, potato wedges and broccoli",
-        "servings": 4,
-        "notes": "Fresh salmon and broccoli are scheduled first because they are among the most perishable ingredients. Roast extra potato wedges for Tuesday lunch.",
-        "prep_time_minutes": 10,
-        "cook_time_minutes": 45,
-        "difficulty": "easy"
-      },
-      "snacks": [
-        "Blueberries",
-        "Yoghurt or non-dairy yoghurt",
-        "Oat bar"
-      ]
+      "breakfast": {"meal": "Toast with peanut butter and sliced pantry apple", "servings": 4, "prep_time_minutes": 8, "cook_time_minutes": 3, "difficulty": "easy", "notes": "Uses the short-dated pantry apples first. Slice only what is needed and refrigerate any cut apple with a little lemon juice."},
+      "lunch": {"meal": "Tin of beans on seeded toast", "servings": 4, "prep_time_minutes": 5, "cook_time_minutes": 8, "difficulty": "easy", "notes": "Uses the pantry tin of beans. One additional tin is bought so four people have a sensible lunch portion."},
+      "dinner": {"meal": "Salmon, potato wedges and broccoli", "servings": 4, "prep_time_minutes": 10, "cook_time_minutes": 45, "difficulty": "easy", "notes": "Scheduled first because fresh salmon and broccoli are among the most perishable ingredients. Cook extra potatoes for Tuesday lunch."},
+      "snacks": ["Pantry apples", "Yoghurts", "Oat cookies"]
     },
     {
       "date": "2026-09-15",
       "day": "Tuesday",
-      "breakfast": {
-        "meal": "Toast with peanut butter or jam",
-        "servings": 4,
-        "notes": "Use the opened bread; toast works well even if slices have been frozen.",
-        "prep_time_minutes": 5,
-        "cook_time_minutes": 5,
-        "difficulty": "easy"
-      },
-      "lunch": {
-        "meal": "Mackerel and vegetable rice with leftover potato wedges",
-        "servings": 4,
-        "notes": "Tinned mackerel and packet rice make a quick lunch; yesterday's wedges avoid waste and can be reheated until piping hot.",
-        "prep_time_minutes": 5,
-        "cook_time_minutes": 10,
-        "difficulty": "easy"
-      },
-      "dinner": {
-        "meal": "Chicken fajita wraps",
-        "servings": 4,
-        "notes": "Uses fresh lettuce and peppers while crisp. Cook one extra chicken portion for Wednesday lunch and keep lettuce dry in a sealed container.",
-        "prep_time_minutes": 20,
-        "cook_time_minutes": 20,
-        "difficulty": "medium"
-      },
-      "snacks": [
-        "Grapes",
-        "Crisps",
-        "Raisins"
-      ]
+      "breakfast": {"meal": "Ready Brek with soy milk and banana", "servings": 4, "prep_time_minutes": 5, "cook_time_minutes": 3, "difficulty": "easy", "notes": "Uses ripe bananas early; reserve three very ripe bananas for banana bread."},
+      "lunch": {"meal": "Mackerel and vegetable rice with leftover potato wedges", "servings": 4, "prep_time_minutes": 5, "cook_time_minutes": 8, "difficulty": "easy", "notes": "Reheat the cooked wedges until piping hot and use four tins of mackerel for four adult-sized servings."},
+      "dinner": {"meal": "Chicken fajita wraps with lettuce, peppers and homemade salsa", "servings": 4, "prep_time_minutes": 20, "cook_time_minutes": 20, "difficulty": "medium", "notes": "Uses delicate lettuce and fresh salsa near the start of the week. Cook two extra chicken portions for Wednesday lunch and keep chilled."},
+      "snacks": ["Grapes", "Raisins", "Banana bread"]
     },
     {
       "date": "2026-09-16",
       "day": "Wednesday",
-      "breakfast": {
-        "meal": "Pancakes with banana",
-        "servings": 4,
-        "notes": "Uses soy milk and eggs already required for the week. Very ripe banana can be mashed into the batter.",
-        "prep_time_minutes": 10,
-        "cook_time_minutes": 15,
-        "difficulty": "easy"
-      },
-      "lunch": {
-        "meal": "Chicken mayo sandwiches or wraps",
-        "servings": 4,
-        "notes": "Uses the reserved cooked fajita chicken and any remaining lettuce or wraps. Keep cooked chicken chilled and use within two days.",
-        "prep_time_minutes": 10,
-        "cook_time_minutes": 0,
-        "difficulty": "easy"
-      },
-      "dinner": {
-        "meal": "Spaghetti Bolognese with carrot, celery and onion",
-        "servings": 4,
-        "notes": "Carrot, celery and onion form the requested base. Make eight portions: serve four and refrigerate or freeze four for Saturday to save cooking and prevent half-used vegetable packs.",
-        "prep_time_minutes": 20,
-        "cook_time_minutes": 60,
-        "difficulty": "medium"
-      },
-      "snacks": [
-        "Apple",
-        "Cheddars",
-        "Yoghurt or non-dairy yoghurt"
-      ]
+      "breakfast": {"meal": "Pancakes with soy milk and blueberries", "servings": 4, "prep_time_minutes": 10, "cook_time_minutes": 15, "difficulty": "medium", "notes": "Uses blueberries while fresh. Extra pancakes can be frozen between sheets of baking paper."},
+      "lunch": {"meal": "Chicken mayo sandwiches with leftover fajita chicken", "servings": 4, "prep_time_minutes": 10, "cook_time_minutes": 0, "difficulty": "easy", "notes": "Turns Tuesday's planned extra chicken into lunch. Keep the chicken refrigerated and use within 24 hours."},
+      "dinner": {"meal": "Chicken stir-fry with noodles, peppers, onion and sweetcorn", "servings": 4, "prep_time_minutes": 20, "cook_time_minutes": 15, "difficulty": "medium", "notes": "Finishes the opened pepper pack and onions after fajitas. Frozen sweetcorn avoids opening another short-lived fresh pack."},
+      "snacks": ["Blueberries", "Cheddars", "Non-dairy yoghurts"]
     },
     {
       "date": "2026-09-17",
       "day": "Thursday",
-      "breakfast": {
-        "meal": "Box cereal with soy milk",
-        "servings": 4,
-        "notes": "A low-preparation breakfast; keep cereal airtight and use the opened soy milk first.",
-        "prep_time_minutes": 3,
-        "cook_time_minutes": 0,
-        "difficulty": "easy"
-      },
-      "lunch": {
-        "meal": "Leek, potato and carrot soup with seeded bread",
-        "servings": 4,
-        "notes": "Uses remaining potatoes and carrots plus part of the leek pack. Make extra soup and freeze portions if not needed on Sunday.",
-        "prep_time_minutes": 15,
-        "cook_time_minutes": 35,
-        "difficulty": "easy"
-      },
-      "dinner": {
-        "meal": "Roast chicken dinner with roast potatoes, carrots and peas",
-        "servings": 4,
-        "notes": "Roast a whole chicken and reserve about 350 g cooked meat for Friday's stir-fry. Freeze the carcass for stock or simmer it with vegetable trimmings.",
-        "prep_time_minutes": 20,
-        "cook_time_minutes": 60,
-        "difficulty": "hard"
-      },
-      "snacks": [
-        "Satsuma",
-        "Biscuits",
-        "Oat bar"
-      ]
+      "breakfast": {"meal": "Cereal with soy milk", "servings": 4, "prep_time_minutes": 3, "cook_time_minutes": 0, "difficulty": "easy", "notes": "A quick breakfast; keep cereal sealed so a family-size box lasts beyond this week."},
+      "lunch": {"meal": "Ham sandwiches with lettuce", "servings": 4, "prep_time_minutes": 10, "cook_time_minutes": 0, "difficulty": "easy", "notes": "Finishes the fajita lettuce and uses the opened bread before it stales. Freeze spare bread slices if consumption is slower than expected."},
+      "dinner": {"meal": "Roast chicken dinner with roast potatoes, carrots and peas", "servings": 6, "prep_time_minutes": 20, "cook_time_minutes": 75, "difficulty": "hard", "notes": "A six-serving roast deliberately creates chicken for Friday lunch. Strip and chill leftovers promptly; freeze the carcass for stock."},
+      "snacks": ["Satsumas", "Crisps", "Banana bread"]
     },
     {
       "date": "2026-09-18",
       "day": "Friday",
-      "breakfast": {
-        "meal": "Ready Brek with soy milk and apple",
-        "servings": 4,
-        "notes": "Apples keep well and balance the remaining fresh fruit through the second half of the week.",
-        "prep_time_minutes": 5,
-        "cook_time_minutes": 3,
-        "difficulty": "easy"
-      },
-      "lunch": {
-        "meal": "Beans or spaghetti on toast",
-        "servings": 4,
-        "notes": "A store-cupboard lunch that uses the second loaf after defrosting and requires no extra perishable filling.",
-        "prep_time_minutes": 5,
-        "cook_time_minutes": 10,
-        "difficulty": "easy"
-      },
-      "dinner": {
-        "meal": "Chicken stir-fry with noodles, peppers, onion, sweetcorn and peas",
-        "servings": 4,
-        "notes": "Uses the reserved roast chicken plus remaining peppers and onion. Frozen sweetcorn and peas mean no half-used fresh packs.",
-        "prep_time_minutes": 20,
-        "cook_time_minutes": 15,
-        "difficulty": "medium"
-      },
-      "snacks": [
-        "Banana",
-        "Crisps",
-        "Yoghurt or non-dairy yoghurt"
-      ]
+      "breakfast": {"meal": "Toast with jam", "servings": 4, "prep_time_minutes": 5, "cook_time_minutes": 3, "difficulty": "easy", "notes": "Uses the opened loaf; freeze any remaining slices today for later toast."},
+      "lunch": {"meal": "Roast chicken mayo wraps", "servings": 4, "prep_time_minutes": 10, "cook_time_minutes": 0, "difficulty": "easy", "notes": "Uses Thursday's planned roast chicken leftovers and the remaining wraps. Add any sound leftover lettuce or salsa."},
+      "dinner": {"meal": "Fish fingers, chips, beans and peas", "servings": 4, "prep_time_minutes": 10, "cook_time_minutes": 25, "difficulty": "easy", "notes": "A freezer-led meal late in the week; frozen components prevent waste. Use one tin of beans and save the other tins for jackets and lunch."},
+      "snacks": ["Oat bars", "Yoghurts", "Chocolate"]
     },
     {
       "date": "2026-09-19",
       "day": "Saturday",
-      "breakfast": {
-        "meal": "Bacon on toast",
-        "servings": 4,
-        "notes": "Bacon is placed later because an unopened pack keeps well; freeze any unused rashers in separated portions.",
-        "prep_time_minutes": 5,
-        "cook_time_minutes": 15,
-        "difficulty": "easy"
-      },
-      "lunch": {
-        "meal": "Leek, potato and carrot soup with bread",
-        "servings": 4,
-        "notes": "Uses Thursday's extra soup. If it was frozen, thaw safely and reheat until piping hot.",
-        "prep_time_minutes": 5,
-        "cook_time_minutes": 10,
-        "difficulty": "easy"
-      },
-      "dinner": {
-        "meal": "Leftover Spaghetti Bolognese",
-        "servings": 4,
-        "notes": "Uses the extra batch made Wednesday. If refrigerated, eat within two days; otherwise freeze Wednesday and defrost in the fridge before reheating.",
-        "prep_time_minutes": 5,
-        "cook_time_minutes": 10,
-        "difficulty": "easy"
-      },
-      "snacks": [
-        "Satsuma",
-        "Chocolate bar",
-        "Cheddars"
-      ]
+      "breakfast": {"meal": "Bacon sandwiches", "servings": 4, "prep_time_minutes": 5, "cook_time_minutes": 12, "difficulty": "easy", "notes": "Uses the opened bread or frozen slices and the full bacon pack in one sitting, avoiding a partial pack."},
+      "lunch": {"meal": "Leek and potato soup with bread", "servings": 4, "prep_time_minutes": 15, "cook_time_minutes": 30, "difficulty": "easy", "notes": "Uses remaining potatoes and a whole leek pack. Make six portions and reserve two for Sunday lunch."},
+      "dinner": {"meal": "Jacket potatoes with tuna, cheese and beans", "servings": 4, "prep_time_minutes": 10, "cook_time_minutes": 60, "difficulty": "easy", "notes": "Long-keeping potatoes suit the weekend. Put toppings in separate bowls so unused tuna and cheese stay clean and can be chilled."},
+      "snacks": ["Biscuits", "Satsumas", "Ice cream"]
     },
     {
       "date": "2026-09-20",
       "day": "Sunday",
-      "breakfast": {
-        "meal": "Pancakes with apple or remaining fruit",
-        "servings": 4,
-        "notes": "Finishes the week's fruit and uses the same long-life pancake staples without opening another cereal box.",
-        "prep_time_minutes": 10,
-        "cook_time_minutes": 15,
-        "difficulty": "easy"
-      },
-      "lunch": {
-        "meal": "Jacket potatoes with tuna, cheese and beans",
-        "servings": 4,
-        "notes": "A flexible lunch for using remaining potatoes, cheese and opened beans. Bake one potato per adult and smaller ones for children.",
-        "prep_time_minutes": 10,
-        "cook_time_minutes": 60,
-        "difficulty": "easy"
-      },
-      "dinner": {
-        "meal": "Sausage and mash with peas",
-        "servings": 4,
-        "notes": "Frozen sausages and peas are deliberately saved for the end of the week because they will not spoil; use remaining potatoes for mash.",
-        "prep_time_minutes": 10,
-        "cook_time_minutes": 45,
-        "difficulty": "easy"
-      },
-      "snacks": [
-        "Apple",
-        "Raisins",
-        "Ice cream"
-      ]
+      "breakfast": {"meal": "Cereal with soy milk and banana", "servings": 4, "prep_time_minutes": 3, "cook_time_minutes": 0, "difficulty": "easy", "notes": "Finishes opened soy milk and remaining fresh bananas; freeze overripe extras for next week's baking."},
+      "lunch": {"meal": "Leftover leek and potato soup with toast", "servings": 4, "prep_time_minutes": 5, "cook_time_minutes": 8, "difficulty": "easy", "notes": "Use Saturday's two reserved portions, extended with toast and fruit; reheat soup until piping hot."},
+      "dinner": {"meal": "Spaghetti Bolognese with carrot, celery and onion", "servings": 8, "prep_time_minutes": 20, "cook_time_minutes": 60, "difficulty": "medium", "notes": "Uses the remaining celery and carrots. Make eight portions: eat four and freeze four immediately for a future low-effort dinner."},
+      "snacks": ["Oat cookies", "Raisins", "Chocolate"]
     }
-  ],
-  "shopping_list": [
-    {
-      "category": "Fresh meat and fish",
-      "item": "Salmon fillets",
-      "quantity": "4 fillets, about 500-600 g",
-      "used_for": [
-        "Monday dinner"
-      ],
-      "notes": "Buy close to the plan start and cook on Monday; freeze immediately if the use-by date is earlier.",
-      "bulkrecommend": "Bulk-buy only when individually frozen; frozen fillets commonly keep for about 3 months for best quality.",
-      "aisle": "fresh meat and fish",
-      "estimated_price": 7.5,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Fresh meat and fish",
-      "item": "Chicken breast",
-      "quantity": "650-750 g",
-      "used_for": [
-        "Tuesday dinner",
-        "Wednesday lunch"
-      ],
-      "notes": "Cook an extra portion with the fajitas for lunch.",
-      "bulkrecommend": "Larger packs can be portioned and frozen raw; use within about 3 months for best quality.",
-      "aisle": "fresh meat and fish",
-      "estimated_price": 5.5,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Fresh meat and fish",
-      "item": "Whole chicken",
-      "quantity": "1 chicken, about 1.8-2 kg",
-      "used_for": [
-        "Thursday dinner",
-        "Friday dinner"
-      ],
-      "notes": "Choose a bird large enough to leave roughly 350 g cooked meat after the roast.",
-      "bulkrecommend": "Freeze spare whole chickens only if freezer space allows; use within about 6 months for best quality.",
-      "aisle": "fresh meat and fish",
-      "estimated_price": 6.5,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Fresh meat and fish",
-      "item": "Beef mince",
-      "quantity": "750 g",
-      "used_for": [
-        "Wednesday dinner",
-        "Saturday dinner"
-      ],
-      "notes": "Makes eight moderate portions of Bolognese; stretch with vegetables and tomatoes.",
-      "bulkrecommend": "Family packs are good value; split into recipe-size portions and freeze for up to about 3-4 months for best quality.",
-      "aisle": "fresh meat and fish",
-      "estimated_price": 6.0,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Chilled",
-      "item": "Sliced ham",
-      "quantity": "1 pack, 200-250 g",
-      "used_for": [
-        "Monday lunch"
-      ],
-      "notes": "Select the smallest pack that provides four lunches and follow the opened-pack instructions.",
-      "bulkrecommend": "Do not bulk-buy unless freezing unopened or separated portions; quality is best within 1-2 months frozen.",
-      "aisle": "chilled",
-      "estimated_price": 2.5,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Chilled",
-      "item": "Bacon",
-      "quantity": "1 pack, 8 rashers",
-      "used_for": [
-        "Saturday breakfast"
-      ],
-      "notes": "Freeze on purchase if the use-by date will not reach Saturday.",
-      "bulkrecommend": "Multipacks can be frozen with rashers separated; aim to use within about 2 months for best quality.",
-      "aisle": "chilled",
-      "estimated_price": 3.0,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Frozen",
-      "item": "Sausages",
-      "quantity": "8 sausages, about 450-500 g",
-      "used_for": [
-        "Sunday dinner"
-      ],
-      "notes": "Cook from frozen only if pack instructions permit; otherwise thaw in the fridge.",
-      "bulkrecommend": "A larger frozen bag is economical and can last several weeks; use within the pack's best-before guidance.",
-      "aisle": "frozen",
-      "estimated_price": 3.0,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Tinned and jars",
-      "item": "Tinned tuna",
-      "quantity": "2 tins, 145-160 g each",
-      "used_for": [
-        "Sunday lunch"
-      ],
-      "notes": "Two tins give a useful topping for four people alongside cheese and beans.",
-      "bulkrecommend": "Buy 4- or 6-packs when on offer; unopened tins usually keep for years until the printed best-before date.",
-      "aisle": "tinned and jars",
-      "estimated_price": 2.5,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Tinned and jars",
-      "item": "Tinned mackerel",
-      "quantity": "2 tins, about 120-125 g each",
-      "used_for": [
-        "Tuesday lunch"
-      ],
-      "notes": "Two tins avoid undersized lunch portions for four.",
-      "bulkrecommend": "Multipacks are suitable for bulk purchase and usually keep for years unopened until the best-before date.",
-      "aisle": "tinned and jars",
-      "estimated_price": 2.5,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Tinned and jars",
-      "item": "Baked beans",
-      "quantity": "4 tins, 400-415 g each",
-      "used_for": [
-        "Friday lunch",
-        "Sunday lunch",
-        "Essentials top-up"
-      ],
-      "notes": "Allows two tins per family meal; reduce if children eat small portions or beans are already stocked.",
-      "bulkrecommend": "Good bulk-buy item; trays keep for years unopened until the printed best-before date.",
-      "aisle": "tinned and jars",
-      "estimated_price": 4.0,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Tinned and jars",
-      "item": "Tinned spaghetti",
-      "quantity": "2 tins, 400 g each",
-      "used_for": [
-        "Friday lunch"
-      ],
-      "notes": "Alternative to beans, so buy either these or two additional bean tins rather than both if everyone has one preference.",
-      "bulkrecommend": "Suitable for multipack purchase and long cupboard storage until the best-before date.",
-      "aisle": "tinned and jars",
-      "estimated_price": 2.0,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Tinned and jars",
-      "item": "Chopped tomatoes",
-      "quantity": "4 tins, 400 g each",
-      "used_for": [
-        "Wednesday dinner",
-        "Saturday dinner"
-      ],
-      "notes": "Four tins make enough sauce for eight Bolognese portions without leftover open tins.",
-      "bulkrecommend": "Buy by the tray if storage permits; unopened tins usually last years.",
-      "aisle": "tinned and jars",
-      "estimated_price": 4.0,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Vegetables",
-      "item": "Potatoes",
-      "quantity": "1 bag, 5 kg",
-      "used_for": [
-        "Monday dinner",
-        "Thursday lunch",
-        "Thursday dinner",
-        "Saturday lunch",
-        "Sunday lunch",
-        "Sunday dinner"
-      ],
-      "notes": "A 5 kg bag consolidates wedges, soup, roast potatoes, jackets and mash with little surplus for four people.",
-      "bulkrecommend": "Store cool, dark, dry and ventilated; this plan uses most within one week, while sound potatoes may last several weeks.",
-      "aisle": "vegetables",
-      "estimated_price": 3.5,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Vegetables",
-      "item": "Carrots",
-      "quantity": "1 kg bag",
-      "used_for": [
-        "Wednesday dinner",
-        "Thursday lunch",
-        "Thursday dinner",
-        "Saturday lunch"
-      ],
-      "notes": "One bag covers Bolognese, soup and roast dinner; peel only when needed.",
-      "bulkrecommend": "A 1 kg bag should last 1-3 weeks refrigerated; larger bags are worthwhile only if excess will become soup or be blanched and frozen.",
-      "aisle": "vegetables",
-      "estimated_price": 0.8,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Vegetables",
-      "item": "Onions",
-      "quantity": "1 kg bag",
-      "used_for": [
-        "Wednesday dinner",
-        "Friday dinner"
-      ],
-      "notes": "Also useful in soup if desired; store away from potatoes.",
-      "bulkrecommend": "Good modest bulk purchase; kept cool, dark and dry they often last several weeks.",
-      "aisle": "vegetables",
-      "estimated_price": 1.0,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Vegetables",
-      "item": "Celery",
-      "quantity": "1 head",
-      "used_for": [
-        "Wednesday dinner"
-      ],
-      "notes": "Use two or three stalks in Bolognese; dice and freeze the remainder for future sauces, soup or stock.",
-      "bulkrecommend": "Not ideal fresh in bulk; chopped celery can be frozen for cooked dishes for about 3 months.",
-      "aisle": "vegetables",
-      "estimated_price": 0.8,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Vegetables",
-      "item": "Broccoli",
-      "quantity": "1 large head, 350-500 g",
-      "used_for": [
-        "Monday dinner"
-      ],
-      "notes": "Use florets and slice the stalk into the tray or save it for soup.",
-      "bulkrecommend": "Prefer one fresh head; frozen florets are the lower-waste bulk option and commonly keep for months.",
-      "aisle": "vegetables",
-      "estimated_price": 1.0,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Vegetables",
-      "item": "Mixed peppers",
-      "quantity": "1 pack of 3",
-      "used_for": [
-        "Tuesday dinner",
-        "Friday dinner"
-      ],
-      "notes": "Use two for fajitas and one for stir-fry; refrigerate the uncut pepper.",
-      "bulkrecommend": "Three is the right weekly pack; surplus sliced peppers can be frozen for cooked meals for about 3 months.",
-      "aisle": "vegetables",
-      "estimated_price": 1.75,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Vegetables",
-      "item": "Lettuce",
-      "quantity": "1 small lettuce or 2 little gems",
-      "used_for": [
-        "Tuesday dinner",
-        "Wednesday lunch"
-      ],
-      "notes": "A small pack prevents leftovers; keep dry and use across consecutive days.",
-      "bulkrecommend": "Do not bulk-buy because it is highly perishable; buy weekly in the smallest useful pack.",
-      "aisle": "vegetables",
-      "estimated_price": 1.2,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Vegetables",
-      "item": "Leeks",
-      "quantity": "1 pack, about 500 g",
-      "used_for": [
-        "Thursday lunch",
-        "Saturday lunch"
-      ],
-      "notes": "Use the full pack in one batch of soup.",
-      "bulkrecommend": "Buy one pack; extra cooked soup freezes well for about 3 months.",
-      "aisle": "vegetables",
-      "estimated_price": 1.5,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Frozen",
-      "item": "Frozen peas",
-      "quantity": "1 bag, 1 kg",
-      "used_for": [
-        "Thursday dinner",
-        "Friday dinner",
-        "Sunday dinner"
-      ],
-      "notes": "Take only the amount needed and return the bag promptly to the freezer.",
-      "bulkrecommend": "A 1 kg bag should cover this week with some reserve and typically lasts several months frozen.",
-      "aisle": "frozen",
-      "estimated_price": 2.0,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Frozen",
-      "item": "Frozen sweetcorn",
-      "quantity": "1 bag, 500-750 g",
-      "used_for": [
-        "Friday dinner"
-      ],
-      "notes": "Frozen avoids an opened tin or a partly used fresh cob pack.",
-      "bulkrecommend": "A bag can support several future meals and commonly keeps for months frozen.",
-      "aisle": "frozen",
-      "estimated_price": 1.5,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Fruit",
-      "item": "Blueberries",
-      "quantity": "1 punnet, 150-200 g",
-      "used_for": [
-        "Monday breakfast",
-        "Monday snack"
-      ],
-      "notes": "Use Monday while freshest; do not wash until serving.",
-      "bulkrecommend": "Buy one fresh punnet; frozen blueberries are the better bulk option and last for months.",
-      "aisle": "fruit",
-      "estimated_price": 3.0,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Fruit",
-      "item": "Grapes",
-      "quantity": "1 punnet, about 500 g",
-      "used_for": [
-        "Monday lunch",
-        "Tuesday snack"
-      ],
-      "notes": "Serve early and keep refrigerated, unwashed, until needed.",
-      "bulkrecommend": "Avoid fresh bulk buying; freeze washed surplus as a snack if necessary.",
-      "aisle": "fruit",
-      "estimated_price": 2.0,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Fruit",
-      "item": "Bananas",
-      "quantity": "6",
-      "used_for": [
-        "Monday breakfast",
-        "Wednesday breakfast",
-        "Friday snack"
-      ],
-      "notes": "Choose mixed ripeness so they do not all ripen together.",
-      "bulkrecommend": "Buy weekly; peel and freeze overripe bananas for pancakes or smoothies for about 3 months.",
-      "aisle": "fruit",
-      "estimated_price": 2.0,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Fruit",
-      "item": "Apples",
-      "quantity": "1 bag of 6",
-      "used_for": [
-        "Wednesday snack",
-        "Friday breakfast",
-        "Sunday breakfast",
-        "Sunday snack"
-      ],
-      "notes": "Refrigeration extends life and the bag size leaves little surplus.",
-      "bulkrecommend": "A modest bag may last several weeks chilled; larger bags are useful only if eaten regularly.",
-      "aisle": "fruit",
-      "estimated_price": 2.0,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Fruit",
-      "item": "Satsumas",
-      "quantity": "1 pack of 6",
-      "used_for": [
-        "Thursday snack",
-        "Saturday snack"
-      ],
-      "notes": "A durable fruit option for later in the week.",
-      "bulkrecommend": "Buy one pack; refrigerated fruit can often last around 1-2 weeks.",
-      "aisle": "fruit",
-      "estimated_price": 2.0,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Bakery",
-      "item": "Seeded bread",
-      "quantity": "2 loaves, 800 g each",
-      "used_for": [
-        "Monday lunch",
-        "Tuesday breakfast",
-        "Wednesday lunch",
-        "Thursday lunch",
-        "Friday lunch",
-        "Saturday breakfast",
-        "Saturday lunch"
-      ],
-      "notes": "Freeze one loaf immediately and remove slices as required to avoid mould and staleness.",
-      "bulkrecommend": "Multi-buy only with freezer space; frozen sliced bread is best used within about 3 months.",
-      "aisle": "bakery",
-      "estimated_price": 4.0,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Bakery",
-      "item": "Fajita wraps",
-      "quantity": "1 pack of 8",
-      "used_for": [
-        "Tuesday dinner",
-        "Wednesday lunch"
-      ],
-      "notes": "Use remaining wraps for Wednesday lunch; freeze any extras before they dry out.",
-      "bulkrecommend": "Extra sealed packs can be frozen for a few months, but one pack covers this plan.",
-      "aisle": "bakery",
-      "estimated_price": 1.75,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Dairy and alternatives",
-      "item": "Soy milk",
-      "quantity": "3 x 1 litre cartons",
-      "used_for": [
-        "Monday breakfast",
-        "Tuesday breakfast",
-        "Wednesday breakfast",
-        "Thursday breakfast",
-        "Friday breakfast",
-        "Sunday breakfast"
-      ],
-      "notes": "Three cartons cover cereal and pancakes for four; open one at a time and follow refrigeration guidance.",
-      "bulkrecommend": "Shelf-stable cartons are ideal by the case and commonly last many months unopened until their best-before date.",
-      "aisle": "dairy and alternatives",
-      "estimated_price": 6.0,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Dairy and alternatives",
-      "item": "Cheddar cheese",
-      "quantity": "1 block, 400 g",
-      "used_for": [
-        "Sunday lunch"
-      ],
-      "notes": "Also available for sandwiches if required; grate only what is needed.",
-      "bulkrecommend": "Large blocks can be portioned and frozen for cooking for about 3 months, though texture may become crumbly.",
-      "aisle": "dairy and alternatives",
-      "estimated_price": 3.0,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Dairy and alternatives",
-      "item": "Yoghurts and non-dairy yoghurts",
-      "quantity": "8 individual pots total",
-      "used_for": [
-        "Monday snack",
-        "Wednesday snack",
-        "Friday snack"
-      ],
-      "notes": "Choose a mix matching household needs and dates long enough to cover Friday.",
-      "bulkrecommend": "Buy only a week's supply because chilled yoghurt is date-sensitive; use the shortest dates first.",
-      "aisle": "dairy and alternatives",
-      "estimated_price": 6.0,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Dairy and alternatives",
-      "item": "Butter or spread",
-      "quantity": "1 pack, 250-500 g",
-      "used_for": [
-        "Toast",
-        "Pancakes",
-        "Mash",
-        "Essentials top-up"
-      ],
-      "notes": "Check existing stock before buying.",
-      "bulkrecommend": "Butter freezes well for several months; buy larger packs only when discounted and portion before freezing.",
-      "aisle": "dairy and alternatives",
-      "estimated_price": 3.0,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Dairy and alternatives",
-      "item": "Eggs",
-      "quantity": "1 box of 12",
-      "used_for": [
-        "Wednesday breakfast",
-        "Sunday breakfast"
-      ],
-      "notes": "Twelve eggs allow roughly six per pancake breakfast; adjust to the preferred recipe.",
-      "bulkrecommend": "Buy according to weekly use and date; avoid excessive bulk purchases unless eggs are used in other meals.",
-      "aisle": "dairy and alternatives",
-      "estimated_price": 2.0,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Dry goods",
-      "item": "Ready Brek or oats",
-      "quantity": "1 box, about 450-500 g",
-      "used_for": [
-        "Monday breakfast",
-        "Friday breakfast"
-      ],
-      "notes": "Check the Essentials stock first; one box leaves useful shelf-stable reserve.",
-      "bulkrecommend": "Large packs are economical if kept airtight and can last for months until the best-before date.",
-      "aisle": "dry goods",
-      "estimated_price": 2.0,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Dry goods",
-      "item": "Breakfast cereal",
-      "quantity": "1 box, about 500 g",
-      "used_for": [
-        "Thursday breakfast"
-      ],
-      "notes": "One box is enough because other breakfasts vary the week.",
-      "bulkrecommend": "Bulk-buy favourite cereal on offer if storage is dry and airtight; rotate by best-before date.",
-      "aisle": "dry goods",
-      "estimated_price": 2.5,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Dry goods",
-      "item": "Self-raising flour",
-      "quantity": "1 bag, 1.5 kg",
-      "used_for": [
-        "Wednesday breakfast",
-        "Sunday breakfast"
-      ],
-      "notes": "Check existing flour first; keep sealed to prevent moisture and pests.",
-      "bulkrecommend": "A 1.5 kg bag will cover several weeks of pancakes and usually lasts months stored airtight.",
-      "aisle": "dry goods",
-      "estimated_price": 2.0,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Dry goods",
-      "item": "Spaghetti",
-      "quantity": "1 kg",
-      "used_for": [
-        "Wednesday dinner",
-        "Saturday dinner"
-      ],
-      "notes": "Allow about 100 g dry pasta per adult-sized serving across eight servings.",
-      "bulkrecommend": "Excellent bulk-buy item; unopened dry pasta usually keeps for years in a cool, dry cupboard.",
-      "aisle": "dry goods",
-      "estimated_price": 1.5,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Dry goods",
-      "item": "Vegetable rice pouches",
-      "quantity": "2 x 250 g pouches",
-      "used_for": [
-        "Tuesday lunch"
-      ],
-      "notes": "Two pouches provide four moderate lunch portions alongside mackerel and leftover wedges.",
-      "bulkrecommend": "Multipacks keep for months unopened; buy in bulk if this lunch recurs regularly.",
-      "aisle": "dry goods",
-      "estimated_price": 2.5,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Dry goods",
-      "item": "Stir-fry noodles",
-      "quantity": "2 x 300 g packs or 400 g dried",
-      "used_for": [
-        "Friday dinner"
-      ],
-      "notes": "Choose dried noodles for the least waste, or use both fresh packs completely.",
-      "bulkrecommend": "Dried noodles are preferable for bulk storage and commonly last a year or more unopened.",
-      "aisle": "dry goods",
-      "estimated_price": 2.0,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Seasonings",
-      "item": "Fajita seasoning",
-      "quantity": "1 sachet or 1 small jar",
-      "used_for": [
-        "Tuesday dinner"
-      ],
-      "notes": "A jar reduces packaging if fajitas are cooked regularly.",
-      "bulkrecommend": "Buy a jar rather than sachets for recurring meals; stored dry and sealed it should last for many future plans until best-before.",
-      "aisle": "seasonings",
-      "estimated_price": 1.0,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Condiments",
-      "item": "Mayonnaise",
-      "quantity": "1 small jar, about 250-300 ml",
-      "used_for": [
-        "Wednesday lunch",
-        "Sunday lunch"
-      ],
-      "notes": "Check current stock; refrigerate after opening.",
-      "bulkrecommend": "Avoid very large jars unless used often; follow the opened storage period on the label.",
-      "aisle": "condiments",
-      "estimated_price": 1.5,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Snacks",
-      "item": "Oat bars",
-      "quantity": "1 pack, baby-friendly/organic",
-      "used_for": [
-        "Monday snack",
-        "Thursday snack"
-      ],
-      "notes": "Matches the spreadsheet preference; choose individually wrapped bars only if needed for portability.",
-      "bulkrecommend": "Multipacks keep for months unopened; buy larger packs when this is a consistent weekly snack.",
-      "aisle": "snacks",
-      "estimated_price": 2.0,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Snacks",
-      "item": "Crisps",
-      "quantity": "1 multipack of 6",
-      "used_for": [
-        "Tuesday snack",
-        "Friday snack"
-      ],
-      "notes": "The requested six-pack leaves some reserve without opening a large sharing bag.",
-      "bulkrecommend": "Buy larger multipacks only if consumed regularly and storage keeps bags from being crushed.",
-      "aisle": "snacks",
-      "estimated_price": 2.0,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Snacks",
-      "item": "Cheddars",
-      "quantity": "1 multipack of 6",
-      "used_for": [
-        "Wednesday snack",
-        "Saturday snack"
-      ],
-      "notes": "Individual packs help portioning and remain fresh.",
-      "bulkrecommend": "Suitable for occasional multipack offers; keep sealed and rotate by best-before date.",
-      "aisle": "snacks",
-      "estimated_price": 2.0,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Snacks",
-      "item": "Raisins",
-      "quantity": "1 multipack of 6",
-      "used_for": [
-        "Tuesday snack",
-        "Sunday snack"
-      ],
-      "notes": "Long-life fruit snack that can carry into another week.",
-      "bulkrecommend": "Good bulk-buy item; sealed packs commonly last many months until best-before.",
-      "aisle": "snacks",
-      "estimated_price": 2.0,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Snacks",
-      "item": "Biscuits",
-      "quantity": "2 packs",
-      "used_for": [
-        "Thursday snack"
-      ],
-      "notes": "One pack may be enough for this week; buy two only if maintaining the requested household reserve.",
-      "bulkrecommend": "Keep unopened packs in reserve and opened packs airtight; buy on offer if routinely consumed.",
-      "aisle": "snacks",
-      "estimated_price": 1.0,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Snacks",
-      "item": "Chocolate bars",
-      "quantity": "1 multipack",
-      "used_for": [
-        "Saturday snack"
-      ],
-      "notes": "Long-life optional treat; check existing snack stock first.",
-      "bulkrecommend": "Multipacks keep for months in a cool cupboard, but purchase to normal consumption rather than maximum pack size.",
-      "aisle": "snacks",
-      "estimated_price": 3.0,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Frozen",
-      "item": "Ice cream",
-      "quantity": "1 tub, about 900 ml",
-      "used_for": [
-        "Sunday snack"
-      ],
-      "notes": "One tub can carry into later weeks; keep frozen continuously.",
-      "bulkrecommend": "One tub is sufficient; larger tubs are economical only with freezer space and regular use.",
-      "aisle": "frozen",
-      "estimated_price": 3.0,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Household essentials",
-      "item": "Tea, milk, jam, peanut butter, sugar, toilet roll and kitchen roll",
-      "quantity": "Top up only after checking current stock",
-      "used_for": [
-        "Breakfasts",
-        "Hot drinks",
-        "Household essentials"
-      ],
-      "notes": "These appear on the Essentials tab but no stock-on-hand quantities are recorded, so avoid automatically rebuying everything.",
-      "bulkrecommend": "Tea, sugar and paper goods suit bulk offers if dry storage is available; buy fresh milk weekly and size it to actual use.",
-      "aisle": "household essentials",
-      "estimated_price": 16.0,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Fruit",
-      "item": "Extra ripe bananas",
-      "quantity": "4 medium",
-      "used_for": [
-        "Sunday dairy-free banana bread"
-      ],
-      "notes": "Choose ripe single bananas if available; otherwise let them ripen during the week.",
-      "bulkrecommend": "Do not bulk-buy fresh. Peel and freeze surplus ripe bananas for up to about 3 months.",
-      "aisle": "produce",
-      "estimated_price": 0.8,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Vegetables",
-      "item": "Fresh tomatoes",
-      "quantity": "6 medium, about 500 g",
-      "used_for": [
-        "Monday fresh tomato salsa"
-      ],
-      "notes": "Choose ripe tomatoes and use the full pack in salsa.",
-      "bulkrecommend": "Buy only the weekly amount; surplus salsa can be frozen for cooked sauces, though texture softens.",
-      "aisle": "produce",
-      "estimated_price": 1.5,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Fruit",
-      "item": "Lime",
-      "quantity": "1",
-      "used_for": [
-        "Monday fresh tomato salsa"
-      ],
-      "notes": "Use all the juice and zest to avoid a cut half being forgotten.",
-      "bulkrecommend": "Not a bulk item for this plan; whole limes usually keep 2-4 weeks refrigerated.",
-      "aisle": "produce",
-      "estimated_price": 0.35,
-      "purchased": false,
-      "perishable": true
-    },
-    {
-      "category": "Dry goods",
-      "item": "Rolled oats",
-      "quantity": "1 bag, 1 kg",
-      "used_for": [
-        "Sunday oat and raisin cookies"
-      ],
-      "notes": "Distinct from Ready Brek; store airtight after opening.",
-      "bulkrecommend": "A 1 kg bag supports several weekly batches and can last 6-12 months in a cool, dry airtight container.",
-      "aisle": "cereals and baking",
-      "estimated_price": 1.5,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Dry goods",
-      "item": "Granulated sugar",
-      "quantity": "1 bag, 1 kg",
-      "used_for": [
-        "Sunday banana bread",
-        "Sunday oat and raisin cookies"
-      ],
-      "notes": "Check Essentials stock before buying; one bag covers both preparations with substantial reserve.",
-      "bulkrecommend": "Suitable for bulk purchase if kept completely dry and sealed; it stores for years.",
-      "aisle": "baking",
-      "estimated_price": 1.0,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Dry goods",
-      "item": "Baking spread or neutral oil",
-      "quantity": "1 x 500 g spread or 500 ml oil",
-      "used_for": [
-        "Sunday banana bread",
-        "Sunday oat and raisin cookies"
-      ],
-      "notes": "Use a dairy-free product suitable for baking and check cupboard stock first.",
-      "bulkrecommend": "Oil keeps for months sealed; buy larger only if regularly used and store away from heat and light.",
-      "aisle": "baking",
-      "estimated_price": 2.0,
-      "purchased": false,
-      "perishable": false
-    },
-    {
-      "category": "Dry goods",
-      "item": "Baking powder",
-      "quantity": "1 small tub",
-      "used_for": [
-        "Sunday banana bread",
-        "Sunday oat and raisin cookies"
-      ],
-      "notes": "Needed only if the chosen recipes require extra lift beyond self-raising flour.",
-      "bulkrecommend": "A small tub lasts many batches; keep dry and replace by the best-before date for reliable rising.",
-      "aisle": "baking",
-      "estimated_price": 1.0,
-      "purchased": false,
-      "perishable": false
-    }
-  ],
-  "waste_reduction_summary": [
-    "Cook salmon, broccoli, berries, grapes, lettuce and opened ham early; rely on frozen and cupboard ingredients near the weekend.",
-    "Cook double Bolognese on Wednesday and reuse it Saturday, freezing Wednesday if it cannot be eaten within two days.",
-    "Roast one whole chicken Thursday, reserve cooked meat for Friday stir-fry, and freeze the carcass for stock.",
-    "Use the same potato, carrot, onion and pepper packs across multiple meals so packs are substantially consumed in one week.",
-    "Freeze one bread loaf immediately and defrost individual slices; freeze surplus wraps, bacon and overripe bananas before quality declines.",
-    "Check existing Essentials and freezer stock before shopping because the source sheet records preferred staples, not current inventory.",
-    "Label chilled leftovers with the cooked date, cool promptly, and freeze anything that will not be eaten within two days.",
-    "Complete salsa on Monday, then bake banana bread and oat-raisin cookies together on Sunday to share oven time; freeze half of each baked batch if not needed promptly."
   ],
   "weekly_preparations": [
-    {
-      "name": "Dairy-free banana bread",
-      "prep_day": "Sunday",
-      "yield": "1 loaf, about 10 slices",
-      "storage": "Keep airtight for 3 days; refrigerate up to 5 days or freeze individual slices for up to 3 months.",
-      "used_for": [
-        "Breakfast or snacks during the following week",
-        "Using overripe bananas"
-      ],
-      "notes": "Prepare Sunday afternoon after assessing remaining bananas. Freeze half in slices immediately if it will not be eaten within three days."
-    },
-    {
-      "name": "Fresh tomato salsa",
-      "prep_day": "Monday",
-      "yield": "About 500 ml, enough for Tuesday fajitas plus lunches",
-      "storage": "Refrigerate in a sealed container and use within 3 days.",
-      "used_for": [
-        "Tuesday chicken fajita wraps",
-        "Wednesday chicken wrap lunch"
-      ],
-      "notes": "Make Monday evening so it is fresh for fajitas. Use remaining salsa at Wednesday lunch rather than leaving an open container."
-    },
-    {
-      "name": "Dairy-free oat and raisin cookies",
-      "prep_day": "Sunday",
-      "yield": "16 small cookies",
-      "storage": "Keep airtight for 5 days or freeze baked cookies for up to 3 months.",
-      "used_for": [
-        "Weekly snacks",
-        "Lunchbox reserve"
-      ],
-      "notes": "Bake alongside banana bread to share oven time. Freeze half once cool to prevent staleness and reduce reliance on packaged snacks."
-    }
+    {"name": "Dairy-free banana bread", "prep_day": "Sunday", "yield": "1 loaf, about 10 slices", "storage": "Keep airtight for 3 days; refrigerate up to 5 days or freeze individual slices for up to 3 months.", "used_for": ["Tuesday snack", "Thursday snack"], "notes": "Make on Sunday when bananas are ripest. Freeze half the loaf at once so it does not stale."},
+    {"name": "Fresh tomato salsa", "prep_day": "Sunday", "yield": "About 500 g / 2 cups", "storage": "Refrigerate in a sealed container and use within 3 days.", "used_for": ["Tuesday chicken fajita wraps", "Friday roast chicken mayo wraps"], "notes": "Sunday preparation allows flavours to develop, but keep it chilled. Use any remainder with Friday's wraps rather than opening another sauce."},
+    {"name": "Dairy-free oat and raisin cookies", "prep_day": "Sunday", "yield": "About 16 cookies", "storage": "Keep airtight for 5 days or freeze for up to 3 months.", "used_for": ["Monday snack", "Wednesday snack", "Sunday snack"], "notes": "Bake once for several snack slots. Freeze half after cooling to preserve texture and prevent over-consumption or waste."}
   ],
-  "estimated_total_cost": 154.95
+  "pantry_inventory": [
+    {"item": "Apples", "quantity": "3", "use_by_date": "2026-09-10"},
+    {"item": "Beans", "quantity": "1 tin", "use_by_date": "2027-09-08"}
+  ],
+  "shopping_list": [
+    {"category":"Pantry stock","item":"Apples","quantity":"0 to buy (3 already available)","used_for":["Monday breakfast","Monday snack"],"notes":"Already available in the pantry; use these before buying any more because the Pantry tab says within 2 days.","bulkrecommend":"Do not bulk-buy this week; fresh apples generally keep 1–4 weeks refrigerated, but this stock is already short-dated.","aisle":"produce","estimated_price":0,"purchased":true,"perishable":true},
+    {"category":"Pantry stock","item":"Tinned beans","quantity":"0 of the first 4 tins; buy 3 tins","used_for":["Monday lunch","Friday dinner","Saturday dinner"],"notes":"You already have 1 tin available; shopping quantity is reduced from 4 tins to 3.","bulkrecommend":"Multipacks are sensible when cheaper per tin; unopened tins commonly last years, but follow the printed best-before date.","aisle":"tinned goods","estimated_price":3,"purchased":false,"perishable":false},
+    {"category":"Fish","item":"Salmon fillets","quantity":"4 fillets (about 500–600 g)","used_for":["Monday dinner"],"notes":"Buy one four-fillet pack, or two two-packs if that is the available size; cook on Monday.","bulkrecommend":"Only bulk-buy frozen fillets; frozen salmon is best used within roughly 3 months for quality.","aisle":"fish","estimated_price":9,"purchased":false,"perishable":true},
+    {"category":"Meat","item":"Chicken breast","quantity":"About 1.2 kg (8 portions)","used_for":["Tuesday dinner","Wednesday lunch","Wednesday dinner"],"notes":"One family pack covers fajitas plus planned lunch leftovers and stir-fry without a partial pack.","bulkrecommend":"Buy larger packs only if portions are separated and frozen on purchase; use frozen chicken within about 9 months for best quality.","aisle":"meat","estimated_price":9,"purchased":false,"perishable":true},
+    {"category":"Meat","item":"Whole chicken","quantity":"1 large chicken, about 1.8–2 kg","used_for":["Thursday dinner","Friday lunch"],"notes":"Choose a bird large enough for six servings so lunch leftovers are intentional.","bulkrecommend":"Extra whole chickens can be frozen for up to about 12 months, but buy only if freezer space and price justify it.","aisle":"meat","estimated_price":6.5,"purchased":false,"perishable":true},
+    {"category":"Meat","item":"Lean beef mince","quantity":"1 kg","used_for":["Sunday dinner","4 frozen future portions"],"notes":"A 1 kg family pack supports an eight-serving Bolognese batch with vegetables and tomatoes.","bulkrecommend":"Family packs are good value; split or cook before freezing and use frozen raw mince within about 4 months for best quality.","aisle":"meat","estimated_price":7,"purchased":false,"perishable":true},
+    {"category":"Meat","item":"Bacon","quantity":"1 pack (about 300 g / 8 rashers)","used_for":["Saturday breakfast"],"notes":"Matches the workbook snack/stock item and is consumed as one family breakfast.","bulkrecommend":"Freeze unopened packs or separated rashers for 1–2 months; avoid bulk purchase without freezer space.","aisle":"meat","estimated_price":3,"purchased":false,"perishable":true},
+    {"category":"Fish","item":"Tinned mackerel","quantity":"4 tins","used_for":["Tuesday lunch"],"notes":"One tin per person gives a straightforward four-serving lunch.","bulkrecommend":"Good multipack item; unopened tins often keep for several years—rotate by printed best-before date.","aisle":"tinned goods","estimated_price":4.8,"purchased":false,"perishable":false},
+    {"category":"Fish","item":"Tinned tuna","quantity":"2 tins","used_for":["Saturday dinner"],"notes":"Two standard tins are sufficient alongside cheese and beans.","bulkrecommend":"Buy multipacks when discounted; unopened tins often keep for several years.","aisle":"tinned goods","estimated_price":2.5,"purchased":false,"perishable":false},
+    {"category":"Frozen","item":"Fish fingers","quantity":"1 family pack (10–12)","used_for":["Friday dinner"],"notes":"Workbook estimate used; buy one pack and keep frozen until needed.","bulkrecommend":"Larger packs reduce unit cost and remain useful for later meals; best quality is usually within 6–8 months frozen.","aisle":"frozen","estimated_price":4,"purchased":false,"perishable":false},
+    {"category":"Frozen","item":"Frozen chips","quantity":"1 kg bag","used_for":["Friday dinner"],"notes":"One standard family bag avoids duplicate entries found in Essentials.","bulkrecommend":"A large bag can last several weeks; keep tightly sealed to limit freezer burn.","aisle":"frozen","estimated_price":2,"purchased":false,"perishable":false},
+    {"category":"Frozen","item":"Frozen peas","quantity":"1 kg bag","used_for":["Thursday dinner","Friday dinner"],"notes":"One bag covers both meals and avoids fresh-pea waste.","bulkrecommend":"Ideal bulk freezer item; best quality is typically maintained for 8–12 months.","aisle":"frozen","estimated_price":2,"purchased":false,"perishable":false},
+    {"category":"Frozen","item":"Frozen sweetcorn","quantity":"500 g bag","used_for":["Wednesday dinner"],"notes":"Use only what is needed and return the bag to the freezer immediately.","bulkrecommend":"A 1 kg bag is reasonable if regularly used; best quality is typically 8–12 months frozen.","aisle":"frozen","estimated_price":1.5,"purchased":false,"perishable":false},
+    {"category":"Produce","item":"Potatoes","quantity":"5 kg bag","used_for":["Monday dinner","Monday leftovers","Thursday dinner","Saturday lunch","Saturday dinner"],"notes":"A single 5 kg sack covers wedges, roast potatoes, soup and jackets with little surplus.","bulkrecommend":"Only buy larger sacks if stored cool, dark and ventilated; expect roughly 2–4 weeks depending on condition.","aisle":"produce","estimated_price":3.5,"purchased":false,"perishable":true},
+    {"category":"Produce","item":"Broccoli","quantity":"2 heads (about 700 g)","used_for":["Monday dinner"],"notes":"Buy close to the week and use Monday while crisp.","bulkrecommend":"Do not bulk-buy fresh; frozen florets are the lower-waste bulk option and keep about 8–12 months.","aisle":"produce","estimated_price":2,"purchased":false,"perishable":true},
+    {"category":"Produce","item":"Bell peppers","quantity":"1 three-pack","used_for":["Tuesday dinner","Wednesday dinner"],"notes":"Split one standard pack across consecutive meals so no cut peppers linger.","bulkrecommend":"Do not bulk-buy unless slicing and freezing; frozen pieces are best within about 6 months.","aisle":"produce","estimated_price":1.8,"purchased":false,"perishable":true},
+    {"category":"Produce","item":"Lettuce","quantity":"1 head","used_for":["Tuesday dinner","Thursday lunch","Friday lunch"],"notes":"Use across three meals; store dry with kitchen paper in a sealed container.","bulkrecommend":"Not suitable for bulk purchase or freezing; buy one head at a time.","aisle":"produce","estimated_price":1,"purchased":false,"perishable":true},
+    {"category":"Produce","item":"Onions","quantity":"1 kg bag","used_for":["Tuesday salsa","Wednesday dinner","Saturday soup","Sunday dinner"],"notes":"A small bag covers all planned uses and stores well.","bulkrecommend":"A 1–2 kg bag is economical; whole onions generally last 2–4 weeks in a cool, ventilated place.","aisle":"produce","estimated_price":1.1,"purchased":false,"perishable":false},
+    {"category":"Produce","item":"Carrots","quantity":"1 kg bag","used_for":["Thursday dinner","Sunday dinner"],"notes":"Use remaining carrots in Bolognese; keep refrigerated in the crisper.","bulkrecommend":"One-kilo bags are suitable; refrigerated carrots often last 3–4 weeks.","aisle":"produce","estimated_price":0.7,"purchased":false,"perishable":true},
+    {"category":"Produce","item":"Celery","quantity":"1 head","used_for":["Sunday dinner"],"notes":"Use the required stalks in Bolognese and freeze chopped surplus for soup or stock.","bulkrecommend":"Buy one head; chopped celery can be frozen for cooked dishes for several months.","aisle":"produce","estimated_price":0.8,"purchased":false,"perishable":true},
+    {"category":"Produce","item":"Leeks","quantity":"500 g pack","used_for":["Saturday lunch","Sunday lunch"],"notes":"Use the entire pack in a six-portion soup batch.","bulkrecommend":"Do not bulk-buy fresh unless sliced and frozen; frozen leeks keep about 6 months.","aisle":"produce","estimated_price":1.5,"purchased":false,"perishable":true},
+    {"category":"Produce","item":"Tomatoes","quantity":"750 g","used_for":["Weekly salsa","Tuesday dinner","Friday lunch"],"notes":"Buy ripe tomatoes for salsa and prepare Sunday; refrigerate prepared salsa promptly.","bulkrecommend":"Fresh tomatoes are not a good bulk buy for this plan; canned tomatoes are the shelf-stable alternative.","aisle":"produce","estimated_price":2.5,"purchased":false,"perishable":true},
+    {"category":"Produce","item":"Bananas","quantity":"10 medium","used_for":["Weekly banana bread","Tuesday breakfast","Sunday breakfast"],"notes":"Use three very ripe bananas for bread and choose mixed ripeness for the rest.","bulkrecommend":"Do not overbuy; peel and freeze overripe bananas for baking for up to 3 months.","aisle":"produce","estimated_price":1.5,"purchased":false,"perishable":true},
+    {"category":"Produce","item":"Grapes","quantity":"1 pack (about 500 g)","used_for":["Tuesday snack"],"notes":"Serve early in the week and refrigerate unwashed until needed.","bulkrecommend":"Not recommended for bulk purchase; freeze surplus grapes for snacks within about 1 month.","aisle":"produce","estimated_price":2,"purchased":false,"perishable":true},
+    {"category":"Produce","item":"Blueberries","quantity":"1 pack (about 250 g)","used_for":["Wednesday breakfast","Wednesday snack"],"notes":"Use the whole pack on Wednesday while fresh.","bulkrecommend":"Frozen blueberries are better for bulk buying and usually retain quality for 8–12 months.","aisle":"produce","estimated_price":3,"purchased":false,"perishable":true},
+    {"category":"Produce","item":"Satsumas","quantity":"1 pack (about 8)","used_for":["Thursday snack","Saturday snack"],"notes":"One pack covers two snack days and keeps better than soft fruit.","bulkrecommend":"A single net is sufficient; refrigerated citrus can last 2–3 weeks.","aisle":"produce","estimated_price":2,"purchased":false,"perishable":true},
+    {"category":"Bakery","item":"Seeded bread","quantity":"2 loaves","used_for":["Monday breakfast","Monday lunch","Wednesday lunch","Thursday lunch","Friday breakfast","Saturday breakfast","Saturday lunch","Sunday lunch"],"notes":"Freeze the second loaf and remove slices as needed to prevent staling.","bulkrecommend":"Multibuy only when freezer space is available; frozen sliced bread is best within about 3 months.","aisle":"bakery","estimated_price":4,"purchased":false,"perishable":true},
+    {"category":"Bakery","item":"Tortilla wraps","quantity":"2 packs of 8","used_for":["Tuesday dinner","Friday lunch"],"notes":"Two eight-packs cover dinner and lunch with no awkward shortfall; freeze any extras.","bulkrecommend":"Unopened packs keep to their date and freeze well for about 3 months.","aisle":"bakery","estimated_price":3,"purchased":false,"perishable":true},
+    {"category":"Dairy","item":"Cheddar cheese","quantity":"400 g block","used_for":["Saturday dinner"],"notes":"A block is cheaper and keeps better than pre-grated cheese; freeze grated surplus.","bulkrecommend":"Larger blocks can be portioned; frozen grated cheddar keeps around 6 months, though texture may become crumbly.","aisle":"dairy","estimated_price":3,"purchased":false,"perishable":true},
+    {"category":"Dairy alternatives","item":"Soy milk","quantity":"3 x 1 litre cartons","used_for":["Pancakes","Ready Brek","Cereal","Banana bread"],"notes":"The workbook specifies soy milk for pancakes. Open cartons in sequence and refrigerate after opening.","bulkrecommend":"Shelf-stable cartons are a good case-buy if regularly used; unopened cartons last to their printed date, opened cartons about 5 days refrigerated.","aisle":"dairy alternatives","estimated_price":6,"purchased":false,"perishable":false},
+    {"category":"Dairy","item":"Yoghurts","quantity":"1 multipack (6)","used_for":["Monday snack","Friday snack"],"notes":"One six-pack covers two snack occasions for three people; use non-dairy pots for the fourth if needed.","bulkrecommend":"Do not buy beyond the dated quantity; yoghurt often keeps 1–2 weeks refrigerated, subject to the use-by date.","aisle":"dairy","estimated_price":3,"purchased":false,"perishable":true},
+    {"category":"Dairy alternatives","item":"Non-dairy yoghurts","quantity":"1 multipack (4–6)","used_for":["Wednesday snack","other snack substitutions"],"notes":"Matches the workbook preference and provides dairy-free flexibility.","bulkrecommend":"Buy only to the use-by date; shelf life varies, commonly 1–3 weeks unopened and refrigerated.","aisle":"dairy alternatives","estimated_price":3,"purchased":false,"perishable":true},
+    {"category":"Chilled","item":"Mayonnaise","quantity":"1 jar (about 500 ml)","used_for":["Wednesday lunch","Friday lunch"],"notes":"One jar covers both chicken lunches and remains useful beyond the week.","bulkrecommend":"A standard jar is enough; refrigerate after opening and follow the label, commonly 1–3 months.","aisle":"condiments","estimated_price":2,"purchased":false,"perishable":false},
+    {"category":"Dry goods","item":"Spaghetti","quantity":"1 kg","used_for":["Sunday dinner","4 frozen future portions"],"notes":"Use about 750 g for eight servings; the remainder stores dry.","bulkrecommend":"Good bulk item in 1–3 kg quantities; dry pasta commonly lasts 1–2 years sealed.","aisle":"pasta and rice","estimated_price":1.5,"purchased":false,"perishable":false},
+    {"category":"Dry goods","item":"Noodles","quantity":"4 portions (about 300–400 g)","used_for":["Wednesday dinner"],"notes":"Buy one four-serving pack to avoid opened remnants.","bulkrecommend":"Multipacks are suitable if stir-fries are frequent; dried noodles often last 1–2 years sealed.","aisle":"pasta and rice","estimated_price":1.5,"purchased":false,"perishable":false},
+    {"category":"Dry goods","item":"Vegetable rice pouches","quantity":"2 x 250 g","used_for":["Tuesday lunch"],"notes":"Two pouches provide four side portions alongside mackerel and wedges.","bulkrecommend":"Shelf-stable pouches can be bought by the case when discounted and typically last many months to the printed date.","aisle":"pasta and rice","estimated_price":2,"purchased":false,"perishable":false},
+    {"category":"Tinned goods","item":"Tinned tomatoes","quantity":"4 x 400 g tins","used_for":["Sunday Bolognese"],"notes":"Workbook estimate used per tin; four tins give enough sauce for eight portions.","bulkrecommend":"Excellent multipack purchase; unopened tins generally keep for years—rotate by best-before date.","aisle":"tinned goods","estimated_price":4,"purchased":false,"perishable":false},
+    {"category":"Baking","item":"Self-raising flour","quantity":"1.5 kg bag","used_for":["Pancakes","Banana bread","Oat cookies"],"notes":"One bag covers all three uses with some reserve.","bulkrecommend":"Buy one sealed bag at a time unless baking often; store airtight and use within roughly 6–12 months.","aisle":"baking","estimated_price":2,"purchased":false,"perishable":false},
+    {"category":"Baking","item":"Oats / Ready Brek","quantity":"1 kg total","used_for":["Tuesday breakfast","Oat cookies"],"notes":"A family bag covers breakfast and weekly cookie preparation.","bulkrecommend":"A 1–2 kg pack is economical; airtight oats keep around 12 months.","aisle":"cereal","estimated_price":2,"purchased":false,"perishable":false},
+    {"category":"Baking","item":"Sugar","quantity":"1 kg bag","used_for":["Banana bread","Oat cookies"],"notes":"Workbook estimate used; only part of the bag is required this week.","bulkrecommend":"Suitable for bulk purchase because dry sugar keeps indefinitely when dry and pest-free.","aisle":"baking","estimated_price":1,"purchased":false,"perishable":false},
+    {"category":"Baking","item":"Eggs","quantity":"12","used_for":["Pancakes","Banana bread","Oat cookies"],"notes":"A dozen comfortably covers all weekly preparation and breakfast recipes.","bulkrecommend":"Buy only what can be used before the date; eggs often keep several weeks refrigerated.","aisle":"eggs","estimated_price":2.5,"purchased":false,"perishable":true},
+    {"category":"Baking","item":"Raisins","quantity":"1 bag (about 500 g)","used_for":["Oat cookies","Tuesday snack","Sunday snack"],"notes":"A bag replaces individual snack packs and also supplies baking.","bulkrecommend":"Economical in 500 g–1 kg bags; airtight dried fruit generally keeps 6–12 months.","aisle":"baking","estimated_price":2,"purchased":false,"perishable":false},
+    {"category":"Breakfast","item":"Breakfast cereal","quantity":"1 family-size box","used_for":["Thursday breakfast","Sunday breakfast"],"notes":"Choose a resealable family pack and measure portions to make it last beyond the week.","bulkrecommend":"Two-box offers are reasonable if storage is dry; unopened cereal usually keeps 6–12 months.","aisle":"cereal","estimated_price":3,"purchased":false,"perishable":false},
+    {"category":"Condiments","item":"Peanut butter","quantity":"1 jar","used_for":["Monday breakfast","future toast"],"notes":"Workbook essential; a standard jar avoids excess stock.","bulkrecommend":"Large jars are worthwhile if regularly used; opened peanut butter often keeps about 3 months in a cool cupboard.","aisle":"condiments","estimated_price":2,"purchased":false,"perishable":false},
+    {"category":"Condiments","item":"Jam","quantity":"1 jar","used_for":["Friday breakfast","future toast"],"notes":"Workbook essential; refrigerate after opening if the label directs.","bulkrecommend":"Buy one jar at a time; opened jam generally keeps 1–3 months refrigerated.","aisle":"condiments","estimated_price":2,"purchased":false,"perishable":false},
+    {"category":"Seasoning","item":"Fajita seasoning","quantity":"1 sachet","used_for":["Tuesday dinner"],"notes":"A single sachet matches one family fajita meal.","bulkrecommend":"A spice jar is cheaper than sachets if fajitas are frequent; dried seasoning is best within 1–2 years.","aisle":"herbs and spices","estimated_price":1,"purchased":false,"perishable":false},
+    {"category":"Snacks","item":"Biscuits","quantity":"2 packs","used_for":["Saturday snack","cupboard reserve"],"notes":"Quantity and estimate follow the workbook.","bulkrecommend":"Multipacks are fine if kept sealed; usually retain quality for several months to the best-before date.","aisle":"snacks","estimated_price":1,"purchased":false,"perishable":false},
+    {"category":"Snacks","item":"Crisps","quantity":"1 six-pack","used_for":["Thursday snack"],"notes":"One multipack provides controlled portions with reserve bags.","bulkrecommend":"Larger multipacks can save money but use by the best-before date, usually within a few months.","aisle":"snacks","estimated_price":2,"purchased":false,"perishable":false},
+    {"category":"Snacks","item":"Cheddars","quantity":"1 six-pack","used_for":["Wednesday snack"],"notes":"Workbook pack size used; unopened packets can roll into next week.","bulkrecommend":"Multipacks store for several months unopened; avoid crushing and rotate by date.","aisle":"snacks","estimated_price":2,"purchased":false,"perishable":false},
+    {"category":"Snacks","item":"Oat bars","quantity":"1 pack","used_for":["Friday snack"],"notes":"Select the baby-friendly/organic type requested in the workbook if relevant to the household.","bulkrecommend":"Buy larger boxes only if eaten regularly; wrapped bars generally keep for several months.","aisle":"snacks","estimated_price":2,"purchased":false,"perishable":false},
+    {"category":"Snacks","item":"Chocolate multipack","quantity":"1 pack","used_for":["Friday snack","Sunday snack"],"notes":"Portion-controlled bars reduce opened-bar waste.","bulkrecommend":"Chocolate keeps around 6–12 months in a cool, dry place; bulk-buy only on genuine offers.","aisle":"snacks","estimated_price":3,"purchased":false,"perishable":false},
+    {"category":"Frozen","item":"Ice cream","quantity":"1 tub","used_for":["Saturday snack"],"notes":"Keep frozen and serve measured portions; the remainder carries forward.","bulkrecommend":"One tub is sufficient; unopened quality is typically best within 2–4 months frozen.","aisle":"frozen","estimated_price":3,"purchased":false,"perishable":false},
+    {"category":"Household","item":"Teabags","quantity":"1 box","used_for":["Weekly household essential"],"notes":"Included from Essentials; check current cupboard stock before purchase.","bulkrecommend":"Large boxes are economical and keep 1–2 years airtight and dry.","aisle":"hot drinks","estimated_price":3,"purchased":false,"perishable":false},
+    {"category":"Household","item":"Toilet rolls","quantity":"1 pack","used_for":["Weekly household essential"],"notes":"Included from Essentials rather than a meal ingredient.","bulkrecommend":"Suitable for bulk purchase when storage allows; no meaningful expiry if kept dry.","aisle":"household","estimated_price":4,"purchased":false,"perishable":false},
+    {"category":"Household","item":"Kitchen roll","quantity":"1 pack","used_for":["Weekly household essential","Lettuce storage"],"notes":"Included from Essentials; a sheet can help keep washed lettuce dry.","bulkrecommend":"Suitable for bulk purchase when storage allows; keep dry.","aisle":"household","estimated_price":2,"purchased":false,"perishable":false}
+  ],
+  "estimated_total_cost": 150.2,
+  "waste_reduction_summary": [
+    "Use the three short-dated pantry apples first and reduce the bean purchase by the one tin already in stock.",
+    "Schedule salmon, broccoli, lettuce, berries and grapes early; rely on frozen fish, chips and peas later in the week.",
+    "Reuse Tuesday fajita chicken at Wednesday lunch and Thursday roast chicken at Friday lunch.",
+    "Share peppers, lettuce, onions, carrots and potatoes across adjacent meals, using standard pack sizes rather than buying separate quantities.",
+    "Make six portions of Saturday soup for Sunday lunch and eight portions of Sunday Bolognese so four can be frozen.",
+    "Freeze half the banana bread and cookies, spare bread slices, grated cheese and any chopped celery before quality declines.",
+    "The list consolidates duplicate Essentials entries for fish fingers, chips and peas into one purchase each."
+  ]
 }
