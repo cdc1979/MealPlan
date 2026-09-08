@@ -78,9 +78,16 @@
     .used-for{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
     .used-for span{padding:3px 7px;border-radius:999px;background:var(--cream);color:var(--green-2);font-size:.7rem;font-weight:750}
     .shop-item:has(input:checked) strong,.shop-item:has(input:checked) .quantity{text-decoration:line-through;color:#7f8b85}
+    .bulk-buy{margin-top:34px;padding:24px;border-radius:var(--radius);background:var(--green);color:white}
+    .bulk-buy h3{margin:0;font:500 clamp(1.55rem,3vw,2.2rem)/1.1 Georgia,serif;letter-spacing:-.025em}
+    .bulk-buy > p{margin:8px 0 20px;color:rgba(255,255,255,.72)}
+    .bulk-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+    .bulk-card{padding:14px;border-radius:15px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.13)}
+    .bulk-card strong{display:block;margin-bottom:5px;font-size:.95rem}
+    .bulk-card p{margin:0;color:rgba(255,255,255,.78);font-size:.82rem;line-height:1.45}
     .empty{display:none;padding:34px;text-align:center;color:var(--muted)}
     footer{padding:26px 0 44px;color:var(--muted);font-size:.84rem;text-align:center}
-    @media(max-width:820px){.hero{min-height:290px;padding:30px 24px}.note-grid{grid-template-columns:1fr}.note{min-height:120px}.days,.shopping-groups{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.shell{width:min(100% - 20px,1180px)}}
+    @media(max-width:820px){.hero{min-height:290px;padding:30px 24px}.note-grid{grid-template-columns:1fr}.note{min-height:120px}.days,.shopping-groups,.bulk-grid{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.shell{width:min(100% - 20px,1180px)}}
     @media(max-width:500px){.masthead{margin-top:10px;border-radius:22px}.hero{min-height:280px}.meal{grid-template-columns:1fr;gap:4px}.meal-type{padding:0}.tabs-wrap{padding-top:8px}.tab{padding:11px 8px}.meta{gap:7px}.meta span{font-size:.77rem}}
     @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
     @media print{.masthead{box-shadow:none}.tabs-wrap,.shopping-tools,.category-nav{display:none}.shell{width:100%}.hero{min-height:180px}.day,.shop-group{break-inside:avoid}.days,.shopping-groups{grid-template-columns:1fr 1fr}body{background:white}}
@@ -123,6 +130,11 @@
       </div>
       <div class="category-nav" id="category-nav" aria-label="Filter shopping categories"></div>
       <div class="shopping-groups" id="shopping-groups"></div>
+      <section class="bulk-buy" aria-labelledby="bulk-buy-title">
+        <h3 id="bulk-buy-title">Bulk-buy recommendations</h3>
+        <p>Use these notes to stock up where it saves money or waste—and avoid buying too much where freshness matters.</p>
+        <div class="bulk-grid" id="bulk-buy-list"></div>
+      </section>
       <p class="empty" id="empty-state">No items in this category.</p>
     </section>
   </main>
@@ -138,6 +150,10 @@
         if(savedPlan){
           state.data=JSON.parse(savedPlan);
           if(!Array.isArray(state.data.days)||!Array.isArray(state.data.shopping_list))throw new Error('Saved plan is invalid');
+          if(!state.data.shopping_list.some(item=>item.bulkrecommend)){
+            localStorage.removeItem('greenvale-local-plan');
+            throw new Error('Saved plan needs updating');
+          }
           renderDays(); renderCategories(); renderShopping();
           return;
         }
@@ -200,6 +216,7 @@
         const key=`${item.category}|${item.item}`; const checked=state.checked.has(key);
         return `<li class="shop-item"><input class="shop-check" type="checkbox" ${checked?'checked':''} data-key="${escapeHtml(key)}" aria-label="Mark ${escapeHtml(item.item)} as bought"><div><strong>${escapeHtml(item.item)}</strong><span class="quantity">${escapeHtml(item.quantity)}</span><p class="shop-note">${escapeHtml(item.notes)}</p><div class="used-for">${item.used_for.map(use=>`<span>${escapeHtml(use)}</span>`).join('')}</div></div></li>`;
       }).join('')}</ul></section>`).join('');
+      document.getElementById('bulk-buy-list').innerHTML=items.filter(item=>item.bulkrecommend).map(item=>`<article class="bulk-card"><strong>${escapeHtml(item.item)}</strong><p>${escapeHtml(item.bulkrecommend)}</p></article>`).join('');
       document.getElementById('empty-state').style.display=items.length?'none':'block';
       document.querySelectorAll('.shop-check').forEach(box=>box.addEventListener('change',()=>{box.checked?state.checked.add(box.dataset.key):state.checked.delete(box.dataset.key);saveChecked();updateProgress()}));
       updateProgress();
