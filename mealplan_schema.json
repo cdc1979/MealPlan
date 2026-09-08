@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/mealplan.json",
+  "title": "Meal Plan",
+  "description": "A weekly meal plan with daily meals, a shopping list, and waste-reduction notes.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "plan_name",
+    "week_start",
+    "people",
+    "assumptions",
+    "days",
+    "shopping_list",
+    "waste_reduction_summary"
+  ],
+  "properties": {
+    "plan_name": { "type": "string", "minLength": 1 },
+    "week_start": { "type": "string", "format": "date" },
+    "people": { "type": "integer", "minimum": 1 },
+    "assumptions": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "days": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/dayPlan" }
+    },
+    "shopping_list": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/shoppingItem" }
+    },
+    "waste_reduction_summary": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    }
+  },
+  "$defs": {
+    "meal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["meal", "servings", "notes"],
+      "properties": {
+        "meal": { "type": "string", "minLength": 1 },
+        "servings": { "type": "integer", "minimum": 1 },
+        "notes": { "type": "string" }
+      }
+    },
+    "dayPlan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["date", "day", "breakfast", "lunch", "dinner", "snacks"],
+      "properties": {
+        "date": { "type": "string", "format": "date" },
+        "day": {
+          "type": "string",
+          "enum": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+        },
+        "breakfast": { "$ref": "#/$defs/meal" },
+        "lunch": { "$ref": "#/$defs/meal" },
+        "dinner": { "$ref": "#/$defs/meal" },
+        "snacks": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "shoppingItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["category", "item", "quantity", "used_for", "notes"],
+      "properties": {
+        "category": { "type": "string", "minLength": 1 },
+        "item": { "type": "string", "minLength": 1 },
+        "quantity": { "type": "string", "minLength": 1 },
+        "used_for": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "notes": { "type": "string" },
+		"bulkrecommend": { "type": "string" }
+      }
+    }
+  }
+}

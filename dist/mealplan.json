@@ -1,0 +1,219 @@
+{
+  "plan_name": "Weekly Meal and Shopping Plan",
+  "week_start": "2026-09-07",
+  "people": 4,
+  "assumptions": [
+    "Quantities are planned for four people so the plan also covers weeks when only three people eat; surplus becomes a planned lunch.",
+    "Check existing stock before shopping, especially essentials, seasonings, spreads, frozen food, and household goods.",
+    "Fresh fish, lettuce, berries, and opened cold meats are used early; robust vegetables, frozen foods, and store-cupboard meals are used later.",
+    "The supplied mealplan_schema.json file was empty, so this uses a clear best-effort structure and could not be validated against the intended schema."
+  ],
+  "days": [
+    {
+      "date": "2026-09-07",
+      "day": "Monday",
+      "breakfast": {
+        "meal": "Box of Cereal with Soy Milk",
+        "servings": 4,
+        "notes": "Open the soy milk and cereal at the start of the week; measure portions rather than free-pouring to make one standard box last."
+      },
+      "lunch": {
+        "meal": "Ham Sandwiches",
+        "servings": 4,
+        "notes": "Use the opened seeded loaf and ham early. Freeze half the loaf immediately if it will not be used within three days."
+      },
+      "dinner": {
+        "meal": "Salmon, Potato Wedges and Broccoli",
+        "servings": 4,
+        "notes": "Fresh salmon is the most time-sensitive dinner, so it is scheduled first. Buy one four-fillet pack, or two two-fillet packs if that is the standard size. Roast the whole broccoli stalk after slicing it thinly to avoid waste."
+      },
+      "snacks": ["Blueberries", "Yoghurts"]
+    },
+    {
+      "date": "2026-09-08",
+      "day": "Tuesday",
+      "breakfast": {
+        "meal": "Ready Break with Soy Milk",
+        "servings": 4,
+        "notes": "Uses the same opened soy milk as Monday. Add a few blueberries before the soft fruit deteriorates."
+      },
+      "lunch": {
+        "meal": "Leek and Potato Soup with Bread",
+        "servings": 4,
+        "notes": "Make four portions using potatoes shared with Monday and Thursday dinners. Use the green leek tops in the soup rather than discarding them."
+      },
+      "dinner": {
+        "meal": "Chicken Fajita Wraps",
+        "servings": 4,
+        "notes": "Use lettuce while crisp and two of the pepper multipack. Cook about 600 g chicken; reserve roughly 150 g cooked filling for Wednesday lunch before serving."
+      },
+      "snacks": ["Grapes", "Oat bars"]
+    },
+    {
+      "date": "2026-09-09",
+      "day": "Wednesday",
+      "breakfast": {
+        "meal": "Toast with Peanut Butter or Jam",
+        "servings": 4,
+        "notes": "Finish the first loaf or use slices frozen on Monday. Peanut butter adds protein and is longer-lasting than opening another chilled item."
+      },
+      "lunch": {
+        "meal": "Chicken Mayo Wraps",
+        "servings": 4,
+        "notes": "Use the reserved cooked fajita chicken and remaining wraps. Keep the chicken chilled and use within one day."
+      },
+      "dinner": {
+        "meal": "Roast Chicken Dinner",
+        "servings": 4,
+        "notes": "Roast a 1.8-2.0 kg chicken with potatoes and carrots. Strip the carcass after dinner: chill enough meat for Thursday lunch and dinner, and freeze any further surplus. The carcass can be frozen for stock."
+      },
+      "snacks": ["Bananas", "Cheddars"]
+    },
+    {
+      "date": "2026-09-10",
+      "day": "Thursday",
+      "breakfast": {
+        "meal": "Pancakes",
+        "servings": 4,
+        "notes": "Use self-raising flour, eggs, and soy milk already bought for the week. Freeze spare pancakes individually for a quick breakfast."
+      },
+      "lunch": {
+        "meal": "Chicken Mayo Sandwiches",
+        "servings": 4,
+        "notes": "First use of Wednesday's roast chicken leftovers. Add any sound leftover lettuce from fajitas."
+      },
+      "dinner": {
+        "meal": "Chicken Stir Fry with Noodles",
+        "servings": 4,
+        "notes": "Finishes the chilled roast chicken and remaining fresh peppers and onion. Frozen sweetcorn avoids opening another perishable pack. Reheat chicken until piping hot and only once."
+      },
+      "snacks": ["Satsumas", "Non-Dairy Yoghurts"]
+    },
+    {
+      "date": "2026-09-11",
+      "day": "Friday",
+      "breakfast": {
+        "meal": "Box of Cereal with Soy Milk",
+        "servings": 4,
+        "notes": "Finish the first opened soy milk carton; open the second only if needed."
+      },
+      "lunch": {
+        "meal": "Mackerel and Vegetable Rice",
+        "servings": 4,
+        "notes": "A store-cupboard lunch suits later in the week. Four tins provide one tin per person; use two rice pouches if each pouch serves two."
+      },
+      "dinner": {
+        "meal": "Beef Chilli with Rice and Kidney Beans",
+        "servings": 6,
+        "notes": "Cook six portions from a 500 g mince pack, tomatoes, kidney beans, carrot, celery, and onion. Serve four and chill two promptly for Saturday lunch, eliminating half-used packs."
+      },
+      "snacks": ["Apples", "Crisps"]
+    },
+    {
+      "date": "2026-09-12",
+      "day": "Saturday",
+      "breakfast": {
+        "meal": "Ready Break with Soy Milk",
+        "servings": 4,
+        "notes": "Top with raisins or sliced banana to use fruit already in the snack allocation."
+      },
+      "lunch": {
+        "meal": "Leftover Beef Chilli with Rice",
+        "servings": 2,
+        "notes": "Planned for two adults from Friday's batch; supplement remaining diners with beans or spaghetti on toast. Reheat the chilli until piping hot."
+      },
+      "dinner": {
+        "meal": "Fish Fingers, Chips and Beans",
+        "servings": 4,
+        "notes": "Frozen ingredients and tins are deliberately used near the end of the week because they will not spoil if plans change. Cook only the number of fish fingers and chips required."
+      },
+      "snacks": ["Raisins", "Biscuits"]
+    },
+    {
+      "date": "2026-09-13",
+      "day": "Sunday",
+      "breakfast": {
+        "meal": "Toast with Marmalade or Peanut Butter",
+        "servings": 4,
+        "notes": "Use bread from the freezer and long-life spreads, preventing a second loaf from going stale."
+      },
+      "lunch": {
+        "meal": "Beans or Spaghetti on Toast",
+        "servings": 4,
+        "notes": "A flexible store-cupboard lunch that uses the remaining bread. Open only the number of tins needed for the people eating."
+      },
+      "dinner": {
+        "meal": "Sausage and Mash with Peas",
+        "servings": 4,
+        "notes": "Frozen sausages and peas are saved for the final day. Use the remaining potatoes and make only enough mash for the diners present."
+      },
+      "snacks": ["Satsumas", "Ice cream"]
+    }
+  ],
+  "shopping_list": [
+    {"category": "Meat and fish", "item": "Salmon fillets", "quantity": "4 fillets (about 500-600 g)", "used_for": ["Monday dinner"], "notes": "Buy a four-pack or two two-packs; use first."},
+    {"category": "Meat and fish", "item": "Chicken breast", "quantity": "600 g pack", "used_for": ["Tuesday dinner", "Wednesday lunch"], "notes": "Cook together; reserve lunch portion before serving."},
+    {"category": "Meat and fish", "item": "Whole chicken", "quantity": "1, about 1.8-2.0 kg", "used_for": ["Wednesday dinner", "Thursday lunch", "Thursday dinner"], "notes": "One bird supplies three linked meals and avoids buying separate sandwich chicken."},
+    {"category": "Meat and fish", "item": "Lean beef mince", "quantity": "1 x 500 g pack", "used_for": ["Friday dinner", "Saturday lunch"], "notes": "Bulk out with beans and vegetables for six portions."},
+    {"category": "Meat and fish", "item": "Ham", "quantity": "1 x 200-250 g pack", "used_for": ["Monday lunch"], "notes": "Use shortly after opening."},
+    {"category": "Meat and fish", "item": "Tinned mackerel", "quantity": "4 tins", "used_for": ["Friday lunch"], "notes": "One tin per person; reduce to three tins when feeding three."},
+    {"category": "Frozen", "item": "Fish fingers", "quantity": "1 x 10-12 pack", "used_for": ["Saturday dinner"], "notes": "Allow 2-3 per person."},
+    {"category": "Frozen", "item": "Sausages", "quantity": "1 x 8 pack", "used_for": ["Sunday dinner"], "notes": "Two per person; freeze on arrival if sold chilled."},
+    {"category": "Frozen", "item": "Oven chips", "quantity": "1 x 750 g bag", "used_for": ["Saturday dinner"], "notes": "Enough for four without a large remainder."},
+    {"category": "Frozen", "item": "Peas", "quantity": "1 x 500 g bag", "used_for": ["Sunday dinner"], "notes": "Resealable and useful beyond this week."},
+    {"category": "Frozen", "item": "Sweetcorn", "quantity": "1 x 500 g bag", "used_for": ["Thursday dinner"], "notes": "Use what is needed and retain the rest frozen."},
+    {"category": "Produce", "item": "Potatoes", "quantity": "1 x 2.5 kg bag", "used_for": ["Monday dinner", "Tuesday lunch", "Wednesday dinner", "Sunday dinner"], "notes": "Shared across four meals; store cool, dark, and dry."},
+    {"category": "Produce", "item": "Carrots", "quantity": "1 x 1 kg bag", "used_for": ["Wednesday dinner", "Friday dinner"], "notes": "Also suitable for snacks or soup if any remain."},
+    {"category": "Produce", "item": "Celery", "quantity": "1 head", "used_for": ["Friday dinner"], "notes": "Dice and freeze unused stalks for a future bolognese or soup."},
+    {"category": "Produce", "item": "Onions", "quantity": "1 x 3 pack", "used_for": ["Tuesday lunch", "Thursday dinner", "Friday dinner"], "notes": "Three meals use the complete small pack."},
+    {"category": "Produce", "item": "Leeks", "quantity": "1 x 2 pack", "used_for": ["Tuesday lunch"], "notes": "Use green tops as well as white parts."},
+    {"category": "Produce", "item": "Mixed peppers", "quantity": "1 x 3 pack", "used_for": ["Tuesday dinner", "Thursday dinner"], "notes": "Split the full pack between fajitas and stir fry."},
+    {"category": "Produce", "item": "Broccoli", "quantity": "1 large head", "used_for": ["Monday dinner"], "notes": "Cook the stalk as well as florets."},
+    {"category": "Produce", "item": "Lettuce", "quantity": "1 small head", "used_for": ["Tuesday dinner", "Thursday lunch"], "notes": "A small whole lettuce generally lasts better than a large bag of leaves."},
+    {"category": "Produce", "item": "Blueberries", "quantity": "1 x 150 g punnet", "used_for": ["Monday snack", "Tuesday breakfast"], "notes": "Eat early."},
+    {"category": "Produce", "item": "Seedless grapes", "quantity": "1 x 500 g punnet", "used_for": ["Tuesday snacks"], "notes": "Wash only the portion being served."},
+    {"category": "Produce", "item": "Apples", "quantity": "1 x 6 pack", "used_for": ["Friday snacks and spare snacks"], "notes": "Longer-lasting fruit for the second half of the week."},
+    {"category": "Produce", "item": "Bananas", "quantity": "1 x 5-6 pack", "used_for": ["Wednesday snacks", "Saturday breakfast"], "notes": "Buy slightly green; freeze overripe peeled fruit."},
+    {"category": "Produce", "item": "Satsumas", "quantity": "1 x 600 g bag", "used_for": ["Thursday and Sunday snacks"], "notes": "Robust fruit suited to later in the week."},
+    {"category": "Bakery", "item": "Seeded bread", "quantity": "2 x medium loaves", "used_for": ["Monday lunch", "Tuesday lunch", "Wednesday breakfast", "Thursday lunch", "Sunday breakfast and lunch"], "notes": "Freeze one loaf and any surplus slices on day one."},
+    {"category": "Bakery", "item": "Fajita wraps", "quantity": "1 x 8 pack", "used_for": ["Tuesday dinner", "Wednesday lunch"], "notes": "Use four for dinner and four for lunch."},
+    {"category": "Dairy and alternatives", "item": "Unsweetened soy milk", "quantity": "2 x 1 litre cartons", "used_for": ["Cereal", "Ready Break", "Pancakes"], "notes": "Open one at a time; buy shelf-stable cartons if available."},
+    {"category": "Dairy and alternatives", "item": "Butter or dairy-free spread", "quantity": "1 x 250 g tub", "used_for": ["Toast", "Sandwiches", "Mash"], "notes": "Check stock first because this is an essential."},
+    {"category": "Dairy and alternatives", "item": "Mayonnaise", "quantity": "1 small jar", "used_for": ["Chicken lunches"], "notes": "Check the fridge before buying."},
+    {"category": "Dairy and alternatives", "item": "Yoghurts", "quantity": "1 x 4 pack", "used_for": ["Monday snacks"], "notes": "Choose four individual portions."},
+    {"category": "Dairy and alternatives", "item": "Non-dairy yoghurts", "quantity": "1 x 4 pack", "used_for": ["Thursday snacks"], "notes": "Choose four individual portions."},
+    {"category": "Dairy and alternatives", "item": "Ice cream", "quantity": "1 x 500 ml tub", "used_for": ["Sunday snack"], "notes": "Small tub limits freezer leftovers."},
+    {"category": "Store cupboard", "item": "Breakfast cereal", "quantity": "1 x 500-750 g box", "used_for": ["Monday and Friday breakfasts"], "notes": "One family box is sufficient for two breakfasts."},
+    {"category": "Store cupboard", "item": "Ready Break or fine porridge oats", "quantity": "1 x 450-500 g box", "used_for": ["Tuesday and Saturday breakfasts"], "notes": "Check existing oats first."},
+    {"category": "Store cupboard", "item": "Self-raising flour", "quantity": "1 x 1 kg bag", "used_for": ["Thursday breakfast"], "notes": "Check the essentials cupboard first."},
+    {"category": "Store cupboard", "item": "Eggs", "quantity": "1 x 6 pack", "used_for": ["Thursday breakfast"], "notes": "A six-pack covers pancakes with a small buffer."},
+    {"category": "Store cupboard", "item": "Peanut butter, jam, or marmalade", "quantity": "1 small jar as needed", "used_for": ["Wednesday and Sunday breakfasts"], "notes": "Buy only a missing spread, not all three."},
+    {"category": "Store cupboard", "item": "Noodles", "quantity": "1 x 4-portion pack (about 300 g)", "used_for": ["Thursday dinner"], "notes": "Match pack size to four servings."},
+    {"category": "Store cupboard", "item": "Rice", "quantity": "1 x 1 kg bag", "used_for": ["Friday dinner", "Saturday lunch"], "notes": "Check stock; dry rice keeps if some remains."},
+    {"category": "Store cupboard", "item": "Vegetable rice pouches", "quantity": "2 x 2-serving pouches", "used_for": ["Friday lunch"], "notes": "Two pouches exactly cover four people."},
+    {"category": "Store cupboard", "item": "Kidney beans", "quantity": "1 x 400 g tin", "used_for": ["Friday dinner", "Saturday lunch"], "notes": "Use the whole tin in the chilli."},
+    {"category": "Store cupboard", "item": "Chopped tomatoes", "quantity": "2 x 400 g tins", "used_for": ["Friday dinner", "Saturday lunch"], "notes": "Use both tins in the six-portion chilli."},
+    {"category": "Store cupboard", "item": "Baked beans", "quantity": "4 x 400 g tins", "used_for": ["Saturday dinner", "Sunday lunch"], "notes": "Two tins per four-person meal; reduce when only three are eating."},
+    {"category": "Store cupboard", "item": "Tinned spaghetti", "quantity": "2 x 400 g tins", "used_for": ["Saturday or Sunday lunch alternative"], "notes": "Buy only if preferred to beans or needed for extra diners."},
+    {"category": "Store cupboard", "item": "Fajita seasoning", "quantity": "1 sachet", "used_for": ["Tuesday dinner"], "notes": "One sachet seasons a 600 g chicken pack."},
+    {"category": "Store cupboard", "item": "Chilli seasoning or spices", "quantity": "1 sachet or pantry spices", "used_for": ["Friday dinner"], "notes": "Check cumin, paprika, and chilli powder before buying."},
+    {"category": "Snacks", "item": "Biscuits", "quantity": "2 small packs", "used_for": ["Saturday and flexible snacks"], "notes": "Keep one pack sealed until needed."},
+    {"category": "Snacks", "item": "Crisps", "quantity": "1 x 6 multipack", "used_for": ["Friday and flexible snacks"], "notes": "Individual packs support portion control."},
+    {"category": "Snacks", "item": "Cheddars", "quantity": "1 x 6 multipack", "used_for": ["Wednesday and flexible snacks"], "notes": "Choose the six-pack listed in the source sheet."},
+    {"category": "Snacks", "item": "Raisins", "quantity": "1 x 6 multipack", "used_for": ["Saturday breakfast and snacks"], "notes": "Individual boxes keep well."},
+    {"category": "Snacks", "item": "Organic baby-friendly oat bars", "quantity": "1 pack", "used_for": ["Tuesday and flexible snacks"], "notes": "Confirm age suitability on the label."},
+    {"category": "Optional snack", "item": "Bacon", "quantity": "1 small pack", "used_for": ["Optional weekend breakfast"], "notes": "Not required by the core plan; omit unless specifically wanted."},
+    {"category": "Household essentials", "item": "Teabags", "quantity": "1 pack if low", "used_for": ["Household"], "notes": "Stock-check item."},
+    {"category": "Household essentials", "item": "Milk", "quantity": "Usual household size if needed", "used_for": ["Household"], "notes": "Separate from the required soy milk; omit if nobody needs dairy milk."},
+    {"category": "Household essentials", "item": "Sugar", "quantity": "1 bag if low", "used_for": ["Household"], "notes": "Stock-check item."},
+    {"category": "Household essentials", "item": "Toilet rolls", "quantity": "1 usual pack if low", "used_for": ["Household"], "notes": "Stock-check item."},
+    {"category": "Household essentials", "item": "Kitchen roll", "quantity": "1 pack if low", "used_for": ["Household"], "notes": "Stock-check item."}
+  ],
+  "waste_reduction_summary": [
+    "Use salmon, ham, lettuce, blueberries, grapes, and chilled yoghurt in the first half of the week.",
+    "Turn Tuesday's fajita chicken into Wednesday lunch and Wednesday's roast chicken into both Thursday meals.",
+    "Cook six chilli portions on Friday so two portions become Saturday lunch.",
+    "Split full packs across meals: peppers across fajitas and stir fry, potatoes across four meals, and bread across breakfasts and lunches.",
+    "Freeze bread on purchase, freeze unused celery for a future sauce or soup, and keep the final dinners largely frozen or shelf-stable."
+  ]
+}
