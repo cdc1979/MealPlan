@@ -11,7 +11,9 @@
     "people",
     "assumptions",
     "days",
+    "weekly_preparations",
     "shopping_list",
+    "estimated_total_cost",
     "waste_reduction_summary"
   ],
   "properties": {
@@ -27,9 +29,19 @@
       "minItems": 1,
       "items": { "$ref": "#/$defs/dayPlan" }
     },
+    "weekly_preparations": {
+      "type": "array",
+      "description": "One-off batch preparations made ahead for the week, such as banana bread, sauces, or dressings, that get used across multiple meals.",
+      "items": { "$ref": "#/$defs/preparation" }
+    },
     "shopping_list": {
       "type": "array",
       "items": { "$ref": "#/$defs/shoppingItem" }
+    },
+    "estimated_total_cost": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Estimated total cost of the shopping list for the week, in the plan's local currency."
     },
     "waste_reduction_summary": {
       "type": "array",
@@ -40,10 +52,16 @@
     "meal": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["meal", "servings", "notes"],
+      "required": ["meal", "servings", "prep_time_minutes", "cook_time_minutes", "difficulty", "notes"],
       "properties": {
         "meal": { "type": "string", "minLength": 1 },
         "servings": { "type": "integer", "minimum": 1 },
+        "prep_time_minutes": { "type": "integer", "minimum": 0 },
+        "cook_time_minutes": { "type": "integer", "minimum": 0 },
+        "difficulty": {
+          "type": "string",
+          "enum": ["easy", "medium", "hard"]
+        },
         "notes": { "type": "string" }
       }
     },
@@ -66,10 +84,29 @@
         }
       }
     },
+    "preparation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "prep_day", "yield", "storage", "used_for", "notes"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "prep_day": {
+          "type": "string",
+          "enum": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+        },
+        "yield": { "type": "string", "minLength": 1 },
+        "storage": { "type": "string", "minLength": 1 },
+        "used_for": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "notes": { "type": "string" }
+      }
+    },
     "shoppingItem": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["category", "item", "quantity", "used_for", "notes"],
+      "required": ["category", "item", "quantity", "used_for", "notes", "aisle", "estimated_price", "purchased", "perishable"],
       "properties": {
         "category": { "type": "string", "minLength": 1 },
         "item": { "type": "string", "minLength": 1 },
@@ -79,7 +116,25 @@
           "items": { "type": "string", "minLength": 1 }
         },
         "notes": { "type": "string" },
-		"bulkrecommend": { "type": "string" }
+		"bulkrecommend": { "type": "string" },
+        "aisle": {
+          "type": "string",
+          "description": "Store section for grouping the list the way a store is laid out, e.g. 'produce', 'dairy', 'pantry', 'frozen'.",
+          "minLength": 1
+        },
+        "estimated_price": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Estimated price for the listed quantity, in the plan's local currency."
+        },
+        "purchased": {
+          "type": "boolean",
+          "description": "Whether this item has been checked off as bought."
+        },
+        "perishable": {
+          "type": "boolean",
+          "description": "Whether this item spoils quickly and should be bought closer to when it's used."
+        }
       }
     }
   }
