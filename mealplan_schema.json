@@ -126,7 +126,7 @@
     "shoppingItem": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["category", "item", "quantity", "used_for", "notes", "aisle", "estimated_price", "purchased", "perishable"],
+      "required": ["category", "item", "quantity", "used_for", "notes", "aisle", "estimated_price", "purchased", "perishable", "needs_freezing"],
       "properties": {
         "category": { "type": "string", "minLength": 1 },
         "item": { "type": "string", "minLength": 1 },
@@ -154,6 +154,10 @@
         "perishable": {
           "type": "boolean",
           "description": "Whether this item spoils quickly and should be bought closer to when it's used."
+        },
+        "needs_freezing": {
+          "type": "boolean",
+          "description": "Whether this item should be frozen once purchased to preserve it until it's used."
         }
       }
     }
